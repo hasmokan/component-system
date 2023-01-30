@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "emuiButton",
+  name: "emui-Button",
   props: {
     type: {
       //数据类型字符串
