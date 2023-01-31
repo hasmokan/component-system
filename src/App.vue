@@ -1,8 +1,7 @@
 <template>
-  <div class="testButton">
+  <div id="app">
     <!-- type -->
     <div>
-      1
       <emui-Button type="default">取消</emui-Button>
       <emui-Button type="primarywhite">确认</emui-Button>
       <emui-Button type="primarygold">确认</emui-Button>
@@ -54,29 +53,14 @@
       <emui-Button type="dangerwhite" circle>测试</emui-Button>
       <emui-Button type="dangergold" circle>测试</emui-Button>
     </div>
-    <!-- 拟态还没弄完 -->
-    <!-- <div>
-      <emui-Button type="default" mimicry>取消</emui-Button>
-      <emui-Button type="primarywhite" mimicry>确认</emui-Button>
-      <emui-Button type="primarygold" mimicry>确认</emui-Button>
-      <emui-Button type="successwhite" mimicry>测试</emui-Button>
-      <emui-Button type="successgold" mimicry>测试</emui-Button>
-      <emui-Button type="warning" mimicry>测试</emui-Button>
-      <emui-Button type="dangerwhite" mimicry>测试</emui-Button>
-      <emui-Button type="dangergold" mimicry>测试</emui-Button>
-    </div> -->
-    <!-- icon还没弄 -->
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "App",
+};
 </script>
 
-<style lang="scss">
-.testButton > div > button {
-  margin-top: 10px;
-  margin-left: 10px;
-  display: inline-block;
-}
+<style scoped lang="scss">
 </style>

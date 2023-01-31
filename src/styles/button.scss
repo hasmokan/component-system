@@ -1,101 +1,12 @@
-<template>
-  <button
-    :class="[
-      'emui-button',
-      `emui-button--${type}`,
-      { plain: plain },
-      { round: round },
-      { circle: circle },
-      { disabled: disabled },
-      { cut: cut },
-    ]"
-    :disabled="disabled"
-    @click="handleClick"
-  >
-    <div class="mask" v-if="disabled"></div>
-    <fai :icon="icon" v-if="icon" />
-    <!-- tip:根据是否传入内容进行span渲染 -->
-    <!-- tip:根据是否传入内容进行span渲染 -->
-    <span v-if="$slots.default">
-      <slot></slot>
-    </span>
-  </button>
-</template>
-
-<script>
-export default {
-  name: "emui-Button",
-  props: {
-    type: {
-      //数据类型字符串
-      type: String,
-      default: "default",
-      // type值校验
-      validator: function (value) {
-        return (
-          [
-            "default",
-            "success",
-            "primary",
-            "danger",
-            "warning",
-            "info",
-          ].indexOf(value) !== -1
-        );
-      },
-    },
-    // 朴素按钮
-    plain: {
-      type: Boolean,
-    },
-    // round按钮
-    round: {
-      type: Boolean,
-    },
-    // 圆形按钮
-    circle: {
-      type: Boolean,
-    },
-    // icon
-    icon: {
-      // tip：这里icon为数组类型，给它添加一个布尔作为默认值，让fai不渲染
-      type: [Array, Boolean],
-      default: false,
-    },
-    // disabled禁用
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
-    mimicry: {
-      type: Boolean,
-      default: false,
-    },
-    cut: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  data() {
-    return {};
-  },
-  methods: {
-    handleClick(e) {
-      this.$emit("click", e);
-    },
-  },
-};
-</script>
-
-<style lang="scss" scoped>
 //@import url(); 引入公共scss类
-@import "@/assets/scss/color.scss";
+@import "./common/scss/color.scss";
 //引入江西拙楷字体
-@import "@/assets/scss/font.scss";
+// @import "./common/scss/font.scss";
 
 //常规字体库
 .emui-button {
   display: inline-block;
+  margin: 10px;
   position: relative;
   font-family: "jiangxizhuokai";
   line-height: 1;
@@ -111,9 +22,8 @@ export default {
   font-weight: 500;
 
   // 禁止文字被选中
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+user-select: none;
+  
 
   padding: 12px 20px;
   font-size: 14px;
@@ -142,10 +52,7 @@ export default {
   font-weight: 500;
 
   // 禁止文字被选中
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-
+  user-select: none;
   padding: 12px 20px;
   font-size: 14px;
   border-radius: 4px;
@@ -404,4 +311,3 @@ export default {
   opacity: 0.5;
   cursor: no-drop;
 }
-</style>
