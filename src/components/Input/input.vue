@@ -105,52 +105,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/common/scss/color";
-
-.input{
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    position: relative;
-    margin: 6px;
-}
-.emui-input {
-  outline: none;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 2px solid $primary-color;
-  font-size: 14px;
-  padding: 7px 10px;
-
-  &:active,
-  &:focus {
-    border-color: $primary-active-color;
-    box-shadow: 0 0 4px $primary-active-color;
-  }
-
-  &__size-large {
-    height: 40px;
-    line-height: 40px;
-  }
-  &__size-small {
-    height: 25px;
-    line-height: 25px;
-  }
-  &__size-default {
-    height: 32px;
-    line-height: 32px;
-  }
-  &__disabled-true{
-    background-color:#f5f7fa;
-    cursor: no-drop;
-  }
-}
-.eyes{
-font-size: 23px;
-  position: absolute;
-  // top: 2px;
-  right: 8px;
-  color: $info-color;
-}
+@import "@/styles/input";
 
 </style>
