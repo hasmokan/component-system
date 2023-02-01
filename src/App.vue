@@ -56,7 +56,13 @@
       </div>
     </div>
     <div class="input">
-      <emui-Input v-model="name" placeholder="123"></emui-Input>
+      <emui-Input type='text' size="large"></emui-Input>
+      <emui-Input type='text' ></emui-Input>
+      <emui-Input type='text' :disabled="true"></emui-Input>
+      <emui-Input type='text'  size="small"></emui-Input>
+      <emui-Input type='password' v-model="input"></emui-Input>
+      <emui-Input type='clearable'></emui-Input>
+      <emui-Input type='textarea'></emui-Input>
     </div>
   </div>
 </template>
@@ -66,7 +72,7 @@ export default {
   name: "App",
   data(){
     return {
-      name:''
+      input:''
     }
   }
 };

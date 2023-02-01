@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import emuiButton from "./components/Button/button"
 import emuiInput from "./components/Input/input"
+import "@/assets/iconfont/iconfont.css"
 
 
 Vue.config.productionTip = false
