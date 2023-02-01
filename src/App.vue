@@ -1,6 +1,17 @@
 <template>
   <div id="app">
-    <!-- type -->
+    <emui-Button type="primarygold" @click="visiable = true">对话框dialog
+    </emui-Button>
+    <emui-Dialog title="emui提示您" :visiable.sync="visiable"> 
+      <!-- .sync等同于 visiable="false" @update:visable,false -->
+      你好，欢迎使用emui组件库
+      <template v-slot:footer>
+        <emui-Button type="primarygold" @click="visiable = false" mimicry>确定</emui-Button>
+        <emui-Button @click="visiable = false">取消</emui-Button>
+      </template>
+
+    </emui-Dialog>
+
     <div>
       <emui-Button type="default">取消</emui-Button>
       <emui-Button type="primarywhite">确认</emui-Button>
@@ -11,7 +22,6 @@
       <emui-Button type="dangerwhite">测试</emui-Button>
       <emui-Button type="dangergold" cut>测试</emui-Button>
     </div>
-    <!-- round -->
     <div>
       <emui-Button type="default" round>取消</emui-Button>
       <emui-Button type="primarywhite" round>确认</emui-Button>
@@ -22,7 +32,6 @@
       <emui-Button type="dangerwhite" round>测试</emui-Button>
       <emui-Button type="dangergold" round>测试</emui-Button>
     </div>
-    <!-- plain -->
     <div>
       <emui-Button type="default" plain>取消</emui-Button>
       <emui-Button type="primarywhite" plain>确认</emui-Button>
@@ -59,8 +68,13 @@
 <script>
 export default {
   name: "App",
+  data(){
+      return{
+        visiable:false,
+      };
+  }
 };
 </script>
 
-<style scoped lang="scss">
-</style>
+
+<style scoped lang="scss"></style>;

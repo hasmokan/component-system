@@ -13,8 +13,7 @@
     @click="handleClick"
   >
     <div class="mask" v-if="disabled"></div>
-    <fai :icon="icon" v-if="icon" />
-    <!-- tip:根据是否传入内容进行span渲染 -->
+    <!-- <fai :icon="icon" v-if="icon" /> -->
     <!-- tip:根据是否传入内容进行span渲染 -->
     <span v-if="$slots.default">
       <slot></slot>
@@ -87,6 +86,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "@/styles/button.scss";
 </style>
