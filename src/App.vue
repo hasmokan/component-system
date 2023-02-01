@@ -12,6 +12,14 @@
 
     </emui-Dialog>
 
+    <emui-Button type="primarygold" @click="visiable1 = true">对话框dialog2
+    </emui-Button>
+    <emui-Dialog title="emui提示您" :visiable.sync="visiable1"> 
+      <!-- .sync等同于 visiable="false" @update:visable,false -->
+      你好，欢迎使用emui组件库
+
+
+    </emui-Dialog>
     <div>
       <emui-Button type="default">取消</emui-Button>
       <emui-Button type="primarywhite">确认</emui-Button>
@@ -71,6 +79,7 @@ export default {
   data(){
       return{
         visiable:false,
+        visiable1:false,
       };
   }
 };
