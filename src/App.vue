@@ -93,14 +93,10 @@ export default {
     return {
       value:'',
       input:'',
-      button:''
+      button:'',
+      visiable:false,
+      visiable1:false,
     }
-  }
-  data(){
-      return{
-        visiable:false,
-        visiable1:false,
-      };
   }
 };
 </script>
