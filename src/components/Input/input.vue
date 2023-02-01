@@ -19,7 +19,7 @@
 <script>
 import { check } from "@/utils/checkone";
 export default {
-  name: "emui-Input",
+  name: "emui-input",
   data() {
     return {
       currentValue: this.value,
