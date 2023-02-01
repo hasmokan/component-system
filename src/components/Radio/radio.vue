@@ -74,26 +74,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.radio {
-  padding: 5px;
-  display: inline-block;
-  .emui-radio-primary {
-    display: flex;
-    align-items: center;
-    .emui-radio {
-      width: 20px;
-      height: 20px;
-      &__disabled--true{
-        cursor: not-allowed;
-      }
-    }
-    .emui-radio-label {
-      margin-left: 5px;
-      vertical-align: middle;
-    }
-    .label-disabled{
-      color: #ccc;
-    }
-  }
-}
+@import "@/styles/radio";
 </style>
