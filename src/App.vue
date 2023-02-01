@@ -63,6 +63,10 @@
       <emui-Input type='password' v-model="input"></emui-Input>
       <emui-Input type='clearable'></emui-Input>
       <emui-Input type='textarea'></emui-Input>
+
+      <emui-Input type='password' v-model="input" size="large"></emui-Input>
+      <emui-Input type='password' v-model="input" size="small"></emui-Input>
+
     </div>
   </div>
 </template>

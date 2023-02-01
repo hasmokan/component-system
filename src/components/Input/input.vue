@@ -148,8 +148,8 @@ export default {
 .eyes{
 font-size: 23px;
   position: absolute;
-  top: 2px;
-  right: 3px;
+  // top: 2px;
+  right: 8px;
   color: $info-color;
 }
 
