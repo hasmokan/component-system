@@ -1,24 +1,27 @@
 <template>
   <div id="app">
-    <emui-Button type="primarygold" @click="visiable = true">对话框dialog
+    <emui-Input type="password" v-model="input" size="large"></emui-Input>
+    <emui-Input type="password" v-model="input" size="small"></emui-Input>
+    <emui-Button type="primarygold" @click="visiable = true"
+      >对话框dialog
     </emui-Button>
-    <emui-Dialog title="emui提示您" :visiable.sync="visiable"> 
+    <emui-Dialog title="emui提示您" :visiable.sync="visiable">
       <!-- .sync等同于 visiable="false" @update:visable,false -->
       你好，欢迎使用emui组件库
       <template v-slot:footer>
-        <emui-Button type="primarygold" @click="visiable = false" mimicry>确定</emui-Button>
+        <emui-Button type="primarygold" @click="visiable = false" mimicry
+          >确定</emui-Button
+        >
         <emui-Button @click="visiable = false">取消</emui-Button>
       </template>
-
     </emui-Dialog>
 
-    <emui-Button type="primarygold" @click="visiable1 = true">对话框dialog2
+    <emui-Button type="primarygold" @click="visiable1 = true"
+      >对话框dialog2
     </emui-Button>
-    <emui-Dialog title="emui提示您" :visiable.sync="visiable1"> 
+    <emui-Dialog title="emui提示您" :visiable.sync="visiable1">
       <!-- .sync等同于 visiable="false" @update:visable,false -->
       你好，欢迎使用emui组件库
-
-
     </emui-Dialog>
     <div>
       <emui-Button type="default">取消</emui-Button>
@@ -70,34 +73,35 @@
       <emui-Button type="dangerwhite" circle>测试</emui-Button>
       <emui-Button type="dangergold" circle>测试</emui-Button>
     </div>
-   <emui-radio-button label="北京" v-model="input"></emui-radio-button>
-   <emui-radio-button label="北京"></emui-radio-button>
-   <emui-radio-button label="北京"></emui-radio-button>
 
-   <emui-radio-group v-model="value" vertical>
-     <emui-radio label="123"/>
-     <emui-radio label="456"/>
-   </emui-radio-group>
+    <emui-radio-button label="北京" v-model="input"></emui-radio-button>
+    <emui-radio-button label="北京"></emui-radio-button>
+    <emui-radio-button label="北京"></emui-radio-button>
 
-   <emui-radio-group v-model="button">
-    <emui-radio-button label="上海" disabled/>
-    <emui-radio-button label="西安"/>
-   </emui-radio-group>
+    <emui-radio-group v-model="value" vertical>
+      <emui-radio label="123" />
+      <emui-radio label="456" />
+    </emui-radio-group>
+
+    <emui-radio-group v-model="button">
+      <emui-radio-button label="上海" disabled />
+      <emui-radio-button label="西安" />
+    </emui-radio-group>
   </div>
 </template>
 
 <script>
 export default {
   name: "App",
-  data(){
+  data() {
     return {
-      value:'',
-      input:'',
-      button:'',
-      visiable:false,
-      visiable1:false,
-    }
-  }
+      value: "",
+      input: "",
+      button: "",
+      visiable: false,
+      visiable1: false,
+    };
+  },
 };
 </script>
 
