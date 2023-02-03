@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div class="radio">
    <span class="emui-radio-primary">
      <input
@@ -15,14 +14,10 @@
     <label class="emui-radio-label" :class="[{'label-disabled':isDisabled}]">{{ label }}</label>
     </span>
   </div>
-=======
-  
->>>>>>> 825bf0d78215bf25c53b9fc126e549504d08b47c
 </template>
 
 <script>
 export default {
-<<<<<<< HEAD
   name: "emui-radio",
   data() {
     return {};
@@ -80,12 +75,4 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/radio";
-=======
-
-}
-</script>
-
-<style>
-
->>>>>>> 825bf0d78215bf25c53b9fc126e549504d08b47c
 </style>
