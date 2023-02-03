@@ -1,6 +1,6 @@
 <template>
   <div class="form-item">
-    <label v-show="label" :class="{'label-required': isRequired}">{{ label }}</label>
+    <label v-show="label" :class="{'label-required': isRequired}" class="form-item-label">{{ label }}</label>
     <slot></slot>
     <div v-if="isShowMes" class="message">{{ message }}</div>
   </div>
@@ -105,8 +105,10 @@ export default {
 .form-item {
   display: flex;
   align-items: center;
+  .form-item-label{
+    margin-right: 10px;
+  }
   .label-required {
-    margin-right: 5px;
     &::before {
       content: "*";
       color: red;
