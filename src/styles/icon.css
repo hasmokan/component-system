@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*有什么需要添加的字体颜色可以添加到下面*/
+/*
+有什么颜色需要添加的添加到下面注意命名规则   color放在后面
+*/
+@font-face {
+  font-family: jiangxizhuokai;
+  src: url("@/styles/common/font/江西拙楷.ttf");
+}
+
+.emui-icon {
+  background-color: white;
+  width: 920px;
+}
+
+svg,
+image {
+  width: 75px;
+  height: 75px;
+}
