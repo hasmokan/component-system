@@ -8,8 +8,10 @@
       :placeholder="placeholder"
       :disabled="disabled"
       @input="handleInput"
+      @blur="handleBlur"
       v-model="currentValue"
       v-else
+      ref="input"
     />
     <span class="iconfont eyes" :class="{'icon-yanjing_yincang':isHide,'icon-yanjing_xianshi':isShow} " @click="changeyes"></span>
     <span class="iconfont icon-chahao eyes"  v-show="type=='clearable'" @click="clearValue"></span>
@@ -18,6 +20,7 @@
 
 <script>
 import { check } from "@/utils/checkone";
+import Emitter from "@/mixins/emitter";
 export default {
   name: "emui-input",
   data() {
@@ -25,8 +28,10 @@ export default {
       currentValue: this.value,
       currentType:this.type,
       isShow:false,
+
     };
   },
+  mixins:[Emitter],
   watch: {
     value(newvalue) {
       this.currentValue = newvalue;
@@ -86,6 +91,10 @@ export default {
       const value = e.target.value;
       this.currentValue = value;
       this.$emit("input", value);
+      this.dispatch('emui-form-item','form-change',value)
+    },
+    handleBlur(){
+      this.dispatch('emui-form-item','form-blur',this.currentValue);
     },
     changeyes(){
         this.isShow=!this.isShow;
@@ -105,52 +114,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/common/scss/color";
-
-.input{
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    position: relative;
-    margin: 6px;
-}
-.emui-input {
-  outline: none;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 2px solid $primary-color;
-  font-size: 14px;
-  padding: 7px 10px;
-
-  &:active,
-  &:focus {
-    border-color: $primary-active-color;
-    box-shadow: 0 0 4px $primary-active-color;
-  }
-
-  &__size-large {
-    height: 40px;
-    line-height: 40px;
-  }
-  &__size-small {
-    height: 25px;
-    line-height: 25px;
-  }
-  &__size-default {
-    height: 32px;
-    line-height: 32px;
-  }
-  &__disabled-true{
-    background-color:#f5f7fa;
-    cursor: no-drop;
-  }
-}
-.eyes{
-font-size: 23px;
-  position: absolute;
-  // top: 2px;
-  right: 8px;
-  color: $info-color;
-}
+@import "@/styles/input";
 
 </style>

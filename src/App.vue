@@ -1,18 +1,6 @@
 <template>
   <div id="app">
-   <emui-radio-button label="北京" v-model="input"></emui-radio-button>
-   <emui-radio-button label="北京"></emui-radio-button>
-   <emui-radio-button label="北京"></emui-radio-button>
-
-   <emui-radio-group v-model="value" vertical>
-     <emui-radio label="123"/>
-     <emui-radio label="456"/>
-   </emui-radio-group>
-
-   <emui-radio-group v-model="button">
-    <emui-radio-button label="上海" disabled/>
-    <emui-radio-button label="西安"/>
-   </emui-radio-group>
+  
   </div>
 </template>
 
@@ -21,12 +9,31 @@ export default {
   name: "App",
   data(){
     return {
-      value:'',
-      input:'',
-      button:''
+      obj:{
+        phone:'',
+        email:''
+      },
+      rules: {
+        phone: [
+          { required: true, message: '不能为空', trigger: 'blur'}
+          ],
+        email: [
+          { required: true, message: '不能为空', trigger: 'blur'},
+          { type: 'email', message: '邮箱格式不正确', trigger: 'blur'}
+        ]
+      }
     }
+  },
+   methods: {
+    handleSubmit() {
+      this.$refs.form.validate((valid) => {
+        if (valid)  console.log('提交成功');
+        else console.log('校验失败');
+      })
+    },
+    handleReset() { this.$refs.form.resetFields() }
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
