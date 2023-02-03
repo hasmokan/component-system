@@ -1,10 +1,16 @@
 <template>
   <div id="app">
    <emui-form v-model="obj" :rules="rules">
-   <emui-form-item>
+   <emui-form-item label="地点">
      <emui-radio-group v-model="obj.phone">
       <emui-radio label="上海"></emui-radio>
       <emui-radio label="北京"></emui-radio>
+    </emui-radio-group>
+   </emui-form-item>
+    <emui-form-item label="地点">
+     <emui-radio-group v-model="obj.email">
+      <emui-radio-button label="上海"></emui-radio-button>
+      <emui-radio-button label="北京"></emui-radio-button>
     </emui-radio-group>
    </emui-form-item>
    </emui-form>
