@@ -1,7 +1,12 @@
 <template>
-   <div class="input">
-    <textarea  class="emui-input" :cols="cols" :rows="rows" v-if="type=='textarea'"></textarea>
-     <input
+  <div class="input">
+    <textarea
+      class="emui-input"
+      :cols="cols"
+      :rows="rows"
+      v-if="type == 'textarea'"
+    ></textarea>
+    <input
       class="emui-input"
       :type="currentType"
       :class="inputClass"
@@ -13,16 +18,27 @@
       v-else
       ref="input"
     />
-    <span class="iconfont eyes" :class="{'icon-yanjing_yincang':isHide,'icon-yanjing_xianshi':isShow} " @click="changeyes"></span>
-    <span class="iconfont icon-chahao eyes"  v-show="type=='clearable'" @click="clearValue"></span>
-   </div>
+    <span
+      class="iconfont eyes"
+      :class="{
+        'icon-yanjing_yincang': isHide,
+        'icon-yanjing_xianshi': isShow,
+      }"
+      @click="changeyes"
+    ></span>
+    <span
+      class="iconfont icon-chahao eyes"
+      v-show="type == 'clearable'"
+      @click="clearValue"
+    ></span>
+  </div>
 </template>
 
 <script>
 import { check } from "@/utils/checkone";
 import Emitter from "@/mixins/emitter";
 export default {
-  name: "emui-input",
+  name: "emui-Input",
   data() {
     return {
       currentValue: this.value,
@@ -43,15 +59,15 @@ export default {
       return {
         [`${prefix}__size-${this.size}`]: true,
         [`${prefix}__type-${this.type}`]: true,
-        [`${prefix}__disabled-${this.disabled}`]:true
+        [`${prefix}__disabled-${this.disabled}`]: true,
       };
     },
-    isHide(){
-        return this.type=="password";
+    isHide() {
+      return this.type == "password";
     },
-    isClear(){
-        return this.type=="clearable"
-    }
+    isClear() {
+      return this.type == "clearable";
+    },
   },
   props: {
     value: {
@@ -60,7 +76,7 @@ export default {
     },
     placeholder: {
       type: String,
-      default:''
+      default: "",
     },
     size: {
       validator(value) {
@@ -72,19 +88,19 @@ export default {
       type: String,
       default: "text",
     },
-    disabled:{
-      type:Boolean,
-      default:false
+    disabled: {
+      type: Boolean,
+      default: false,
     },
     //textarea的列数和行数
-    cols:{
-      type:Number,
-      default:24
+    cols: {
+      type: Number,
+      default: 24,
     },
-    rows:{
-      type:Number,
-      default:2
-    }
+    rows: {
+      type: Number,
+      default: 2,
+    },
   },
   methods: {
     handleInput(e) {
@@ -96,24 +112,23 @@ export default {
     handleBlur(){
       this.dispatch('emui-form-item','form-blur',this.currentValue);
     },
-    changeyes(){
-        this.isShow=!this.isShow;
-        this.isHide=!this.isHide;
-        if(this.isShow){
-            this.currentType="text";
-        }else{
-            this.currentType="password";
-        }
+    changeyes() {
+      this.isShow = !this.isShow;
+      this.isHide = !this.isHide;
+      if (this.isShow) {
+        this.currentType = "text";
+      } else {
+        this.currentType = "password";
+      }
     },
-    clearValue(){
-        this.currentValue='';
-        this.$emit('input',this.currentValue)
-    }
+    clearValue() {
+      this.currentValue = "";
+      this.$emit("input", this.currentValue);
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/styles/input";
-
 </style>
