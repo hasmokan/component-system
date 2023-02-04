@@ -19,7 +19,8 @@ export default {
     disabled:{
         type:Boolean,
         default:false
-    }
+    },
+    value:null
   },
   inject: {
     radioGroup: {
