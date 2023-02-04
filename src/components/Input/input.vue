@@ -8,8 +8,10 @@
       :placeholder="placeholder"
       :disabled="disabled"
       @input="handleInput"
+      @blur="handleBlur"
       v-model="currentValue"
       v-else
+      ref="input"
     />
     <span class="iconfont eyes" :class="{'icon-yanjing_yincang':isHide,'icon-yanjing_xianshi':isShow} " @click="changeyes"></span>
     <span class="iconfont icon-chahao eyes"  v-show="type=='clearable'" @click="clearValue"></span>
@@ -18,6 +20,7 @@
 
 <script>
 import { check } from "@/utils/checkone";
+import Emitter from "@/mixins/emitter";
 export default {
   name: "emui-input",
   data() {
@@ -25,8 +28,10 @@ export default {
       currentValue: this.value,
       currentType:this.type,
       isShow:false,
+
     };
   },
+  mixins:[Emitter],
   watch: {
     value(newvalue) {
       this.currentValue = newvalue;
@@ -86,6 +91,10 @@ export default {
       const value = e.target.value;
       this.currentValue = value;
       this.$emit("input", value);
+      this.dispatch('emui-form-item','form-change',value)
+    },
+    handleBlur(){
+      this.dispatch('emui-form-item','form-blur',this.currentValue);
     },
     changeyes(){
         this.isShow=!this.isShow;

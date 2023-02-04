@@ -62,7 +62,7 @@ export default {
         }
     },
     isDisabled(){
-      return this.isGrouped?this.radioGroup.disabled||this.disabled:this.isDisabled
+      return this.isGrouped?this.radioGroup.disabled||this.disabled:this.disabled
     }
   },
   methods:{
