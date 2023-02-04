@@ -1,12 +1,12 @@
 <template>
-  <div class="g-nav">
+  <div class="emui-nav">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: "GuluNav",
+  name: "emui-Nav",
   provide() {
     return {
       root: this,

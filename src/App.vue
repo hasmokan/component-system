@@ -87,6 +87,8 @@
       <emui-radio-button label="上海" disabled />
       <emui-radio-button label="西安" />
     </emui-radio-group>
+    <emui-Nav :selected="selected">
+
   </div>
 </template>
 
