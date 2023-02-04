@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-   <emui-form v-model="obj" :rules="rules">
+   <emui-form v-model="obj">
    <emui-form-item label="地点">
      <emui-radio-group v-model="obj.phone">
       <emui-radio label="上海"></emui-radio>
@@ -13,6 +13,12 @@
       <emui-radio-button label="北京"></emui-radio-button>
     </emui-radio-group>
    </emui-form-item>
+   <emui-form-item label="数字"> 
+    <emui-checkbox-group v-model="obj.datalist">
+      <emui-checkbox label="123"></emui-checkbox>
+      <emui-checkbox label="456"></emui-checkbox>
+    </emui-checkbox-group>
+   </emui-form-item>
    </emui-form>
   </div>
 </template>
@@ -24,7 +30,8 @@ export default {
     return {
       obj:{
         phone:'',
-        email:''
+        email:'',
+        datalist:[]
       },
       // rules: {
       //   phone: [

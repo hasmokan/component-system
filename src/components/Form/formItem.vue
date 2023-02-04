@@ -105,8 +105,9 @@ export default {
 .form-item {
   display: flex;
   align-items: center;
+  margin: 20px;
   .form-item-label{
-    margin-right: 10px;
+    margin-right: 30px;
   }
   .label-required {
     &::before {

@@ -7,6 +7,8 @@ import emuiRadioButton from "./components/Radio/RadioButton"
 import emuiRadioGroup from "./components/Radio/RadioGroup"
 import emuiForm from "./components/Form/form"
 import emuiFormItem from "./components/Form/formItem"
+import emuiCheckBox from "./components/CheckBox/checkbox"
+import emuiCheckBoxGroup from "./components/CheckBox/checkboxGroup"
 import "@/assets/iconfont/iconfont.css"
 
 
@@ -18,6 +20,9 @@ Vue.component(emuiRadioButton.name,emuiRadioButton)
 Vue.component(emuiRadioGroup.name,emuiRadioGroup)
 Vue.component(emuiForm.name,emuiForm)
 Vue.component(emuiFormItem.name,emuiFormItem)
+Vue.component(emuiCheckBox.name,emuiCheckBox)
+Vue.component(emuiCheckBoxGroup.name,emuiCheckBoxGroup)
+
 
 new Vue({
   render: h => h(App),
