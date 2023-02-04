@@ -87,6 +87,19 @@
       <emui-radio-button label="上海" disabled />
       <emui-radio-button label="西安" />
     </emui-radio-group>
+    <emui-tag :size="size">
+      4444
+    </emui-tag>&nbsp;&nbsp;&nbsp;&nbsp;
+    <emui-tag :size="size" closable=true>
+      4444
+    </emui-tag>&nbsp;&nbsp;&nbsp;&nbsp;
+    <emui-tag :size="size" closable=true hit=true>
+      4444
+    </emui-tag>
+    <hr>
+    <emui-tag :size="size" closable=true hit=true :type="type" effect="dark">
+      4444
+    </emui-tag>
   </div>
 </template>
 
@@ -100,6 +113,9 @@ export default {
       button: "",
       visiable: false,
       visiable1: false,
+      size:'large',
+      type:'warning',
+      
     };
   },
 };

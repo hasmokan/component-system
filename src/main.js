@@ -6,6 +6,7 @@ import emuiInput from "./components/Input/input"
 import emuiRadio from "./components/Radio/radio"
 import emuiRadioButton from "./components/Radio/RadioButton"
 import emuiRadioGroup from "./components/Radio/RadioGroup"
+import emuiTag from "@/components/Tag/Tag1.vue"
 import "@/assets/iconfont/iconfont.css"
 
 
@@ -16,7 +17,7 @@ Vue.component(emuiInput.name, emuiInput)
 Vue.component(emuiRadio.name, emuiRadio)
 Vue.component(emuiRadioButton.name, emuiRadioButton)
 Vue.component(emuiRadioGroup.name, emuiRadioGroup)
-
+Vue.component(emuiTag.name,emuiTag)
 new Vue({
   render: h => h(App),
 }).$mount('#app')
