@@ -8,7 +8,7 @@ import emuiRadioButton from "./components/Radio/RadioButton"
 import emuiRadioGroup from "./components/Radio/RadioGroup"
 import emuiNav from "./components/Nav/nav"
 import emuiNavItem from "./components/Nav/nav-item"
-import emuiSubNav from "./components/Nav/subnav"
+import emuiSubNav from "./components/Nav/sub-nav"
 import "@/assets/iconfont/iconfont.css"
 
 
