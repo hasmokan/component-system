@@ -1,0 +1,17 @@
+@import "./common/scss/color.scss";
+.Big{
+    
+    background-color:$warning-color;
+
+}
+.box{
+    
+    background-color:$link-color;
+   
+}
+.small{
+    height: 2px;
+}
+.large{
+    height: 5px;
+}
