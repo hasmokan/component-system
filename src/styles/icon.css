@@ -13,8 +13,7 @@
   width: 920px;
 }
 
-svg,
-image {
+svg, image {
   width: 75px;
   height: 75px;
 }

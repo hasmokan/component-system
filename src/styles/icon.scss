@@ -3,15 +3,13 @@
 //引入江西拙楷字体
 @import "./common/scss/font.scss";
 
-$background-color-default: white;
+$background-color-default:white;
 
 .emui-icon {
-    background-color: $background-color-default;
+    background-color:$background-color-default;
     width: 920px;
 }
-
-svg,
-image {
+svg,image{
     width: 75px;
     height: 75px;
 }

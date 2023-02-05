@@ -10,6 +10,8 @@ import emuiIcon from "./components/Icon/icon.vue"
 import "@/assets/iconfont/iconfont.css"
 import "./components/Icon/icon.js"
 
+
+
 Vue.config.productionTip = false
 Vue.component(emuiButton.name, emuiButton)
 Vue.component(emuiDialog.name, emuiDialog)
