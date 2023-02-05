@@ -100,6 +100,10 @@
     <emui-tag :size="size" closable=true hit=true :type="type" effect="dark">
       4444
     </emui-tag>
+    <hr>
+    <emui-progress :progress=progress></emui-progress>
+    <hr>
+    <emui-progress :progress=progress size="large"></emui-progress>
   </div>
 </template>
 
@@ -115,6 +119,7 @@ export default {
       visiable1: false,
       size:'large',
       type:'warning',
+      progress:40
       
     };
   },
