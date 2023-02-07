@@ -1,5 +1,5 @@
 <template>
-  <div class="checkbox" @click="handleChange">
+  <div class="checkbox" >
     <span class="emui-checkbox-primary">
       <input
         type="checkbox"
@@ -8,6 +8,7 @@
         :disabled="isDisabled"
         :class="checkboxClass"
         :name="name"
+        @change="handleChange"
       />
       <label
         class="emui-checkbox-label"
@@ -19,13 +20,13 @@
 </template>
 
 <script>
+import Emitter from "@/mixins/emitter";
 export default {
   name: "emui-checkbox",
   data() {
-    return {
-      currentValue: false,
-    };
+    return {};
   },
+  mixins: [Emitter],
   props: {
     label: {
       type: [String, Number, Boolean],
@@ -54,13 +55,6 @@ export default {
     isGrouped() {
       return !!this.CheckboxGroup;
     },
-    // currentValue() {
-    //   if (!this.isGrouped) {
-    //     return this.value;
-    //   } else {
-    //     return "";
-    //   }
-    // },
     checkboxClass() {
       const prefix = "emui-checkbox";
       return {
@@ -72,25 +66,39 @@ export default {
         ? this.CheckboxGroup.disabled || this.disabled
         : this.disabled;
     },
+    currentValue: {
+      get() {
+        if (this.isGrouped) {
+         return this.CheckboxGroup.value.indexOf(this.label)!==-1;
+        } else {
+         return this.value == this.label;
+        }
+      },
+      set(value) {
+        if (this.isGrouped) {
+          if (value) {
+            this.CheckboxGroup.value.push(this.label);
+          } else {
+            this.CheckboxGroup.value.pop(this.label);
+          }
+        }
+        this.isGrouped
+          ? this.CheckboxGroup.$emit("change", this.CheckboxGroup.value)
+          : this.$emit("change", this.value);
+      },
+    },
   },
   methods: {
     handleChange() {
-      this.currentValue = !this.currentValue;
-      if (this.isGrouped) {
-        if (this.currentValue) {
-          this.CheckboxGroup.value.push(this.label);
-        } else {
-          this.CheckboxGroup.value.pop(this.label);
-        }
-      }
-      this.isGrouped
-        ? this.CheckboxGroup.$emit("change", this.CheckboxGroup.value)
-        : this.$emit("change", this.value);
-    },
+      this.dispatch("emui-form-item", "form-change", this.currentValue);
+    }
   },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/styles/checkbox";
+.checkbox {
+  margin: 0;
+}
 </style>

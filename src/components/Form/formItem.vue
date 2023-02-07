@@ -1,6 +1,11 @@
 <template>
   <div class="form-item">
-    <label v-show="label" :class="{'label-required': isRequired}" class="form-item-label">{{ label }}</label>
+    <label
+      v-show="label"
+      :class="{ 'label-required': isRequired }"
+      class="form-item-label"
+      >{{ label }}</label
+    >
     <slot></slot>
     <div v-if="isShowMes" class="message">{{ message }}</div>
   </div>
@@ -14,11 +19,11 @@ export default {
   data() {
     return {
       isRequired: false,
-      isShowMes: false,
       message: "",
+      initialValue:""
     };
   },
-  mixins: [ Emitter ],
+  mixins: [Emitter],
   inject: ["form"],
   props: {
     label: {
@@ -34,7 +39,12 @@ export default {
     if (this.prop) {
       this.dispatch("emui-form", "formitem-add", this);
       // 设置初始值
-      this.initialValue = this.fieldValue;
+      if (Array.isArray(this.fieldValue)) {
+        this.initialValue = this.fieldValue.concat([]);  
+      } else {
+        this.initialValue = this.fieldValue;
+      }
+
       this.setRules();
     }
   },
@@ -46,6 +56,9 @@ export default {
     fieldValue() {
       return this.form.model[this.prop];
     },
+    isShowMes(){
+      return this.form.model[this.prop]=='';
+    }
   },
   methods: {
     setRules() {
@@ -82,14 +95,17 @@ export default {
       const validator = new AsyncValidator({ [this.prop]: rules });
       let value = { [this.prop]: this.fieldValue };
       validator.validate(value, { firstFields: true }, (errors) => {
-        this.isShowMes = errors ? true : false;
         this.message = errors ? errors[0].message : "";
         if (cb) cb(this.message);
       });
     },
     resetField() {
       this.message = "";
-      this.form.model[this.prop] = this.initialValue;
+      if(Array.isArray(this.initialValue)){
+        this.form.model[this.prop]=this.initialValue.concat([])
+      }else{
+        this.form.model[this.prop] = this.initialValue;
+      }
     },
     onFieldBlur() {
       this.validate("blur");
@@ -106,7 +122,7 @@ export default {
   display: flex;
   align-items: center;
   margin: 20px;
-  .form-item-label{
+  .form-item-label {
     margin-right: 30px;
   }
   .label-required {

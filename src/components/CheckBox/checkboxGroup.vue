@@ -1,5 +1,5 @@
 <template>
-  <div :class="[{'is-vertical':vertical}]">
+  <div :class="[{'is-vertical':vertical}]" class="group">
     <slot></slot>
   </div>
 </template>
@@ -32,5 +32,8 @@ export default {
 .is-vertical{
     display: flex;
     flex-direction: column;
+}
+.group{
+  margin: 0;
 }
 </style>

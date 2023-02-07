@@ -38,7 +38,7 @@
 import { check } from "@/utils/checkone";
 import Emitter from "@/mixins/emitter";
 export default {
-  name: "emui-Input",
+  name: "emui-input",
   data() {
     return {
       currentValue: this.value,

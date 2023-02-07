@@ -9,6 +9,8 @@ import emuiForm from "./components/Form/form"
 import emuiFormItem from "./components/Form/formItem"
 import emuiCheckBox from "./components/CheckBox/checkbox"
 import emuiCheckBoxGroup from "./components/CheckBox/checkboxGroup"
+import emuiSelect from "./components/Select/select"
+import emuiOption from "./components/Select/option"
 import "@/assets/iconfont/iconfont.css"
 
 
@@ -22,6 +24,8 @@ Vue.component(emuiForm.name,emuiForm)
 Vue.component(emuiFormItem.name,emuiFormItem)
 Vue.component(emuiCheckBox.name,emuiCheckBox)
 Vue.component(emuiCheckBoxGroup.name,emuiCheckBoxGroup)
+Vue.component(emuiSelect.name,emuiSelect)
+Vue.component(emuiOption.name,emuiOption)
 
 
 new Vue({

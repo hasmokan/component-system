@@ -7,6 +7,19 @@
 <script>
 export default {
   name: "emui-radio-group",
+  data(){
+    return {
+      options:[]
+    }
+  },
+  created(){
+    this.$on('add-bgc-to-button',option=>{
+      this.options.forEach(item => {
+        item.showBgc=false;
+      });
+      option.showBgc=true;
+    })
+  },
   props: {
     value: null,
     disabled: {
@@ -18,11 +31,20 @@ export default {
       default: false,
     },
   },
+  watch:{
+    value(newValue){
+      if(newValue==''){
+        this.options.forEach(item=>{
+          item.showBgc=false;
+        })
+      }
+    }
+  },
   provide() {
     return {
       radioGroup: this,
     };
-  },
+  }
 };
 </script>
 
