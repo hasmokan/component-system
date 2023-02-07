@@ -1,8 +1,18 @@
 <template>
   <div id="app">
-    <emui-nav :selected="['home', 1]" multiple>
+    <!-- <emui-nav :selected.sync="selected">
       <emui-nav-item name="home">首页</emui-nav-item>
       <emui-nav-item name="about">招聘</emui-nav-item>
+      <emui-nav-item name="hire">测试</emui-nav-item>
+    </emui-nav> -->
+    <emui-nav :selected.sync="selected">
+      <emui-nav-item name="home">首页</emui-nav-item>
+      <emui-sub-nav>
+        <template slot="title">关于</template>
+        <emui-nav-item name="culture">企业文化</emui-nav-item>
+        <emui-nav-item name="developers">开发团队</emui-nav-item>
+        <emui-nav-item name="contacts">联系电话</emui-nav-item>
+      </emui-sub-nav>
       <emui-nav-item name="hire">测试</emui-nav-item>
     </emui-nav>
   </div>
@@ -18,11 +28,12 @@ export default {
       button: "",
       visiable: false,
       visiable1: false,
-      selected: ["home"],
+      selected: ["culture"],
     };
   },
 };
 </script>
 
 
-<style scoped lang="scss"></style>;
+<style scoped lang="scss">
+</style>
