@@ -1,0 +1,86 @@
+//@import url(); 引入公共scss类
+@import "./common/scss/color.scss";
+//引入江西拙楷字体
+@import "./common/scss/font.scss";
+
+.emui-dialog--wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: -3vh;
+  left: 0;
+  overflow: auto;
+  margin: 0;
+  z-index: 2001;
+  background-color: rgba(0, 0, 0, 0.5);
+  .emui-dialog {
+    position: relative;
+    margin: 15vh auto 50px;
+    background: $background-flesh-color;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+    border: 5px solid $primary-color;
+    box-sizing: border-box;
+    &--header {
+      padding: 20px 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      .emui-dialog--title {
+        
+        font-family: "jiangxizhuokai";
+        line-height: 24px;
+        font-size: 22px;
+        color: $primary-color;
+      }
+      .emui-dialog--headerbtn {
+        padding: 0;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 16px;
+        .emui-icon-close {
+          color: 909399;
+        }
+      }
+    }
+    &--body {
+      padding: 30px 20px;
+      color: #606266;
+      font-size: 14px;
+      // CSS 属性 word-break 指定了怎样在单词内断行
+      word-break: break-all;
+    }
+    &--footer {
+      padding: 10px 20px 20px;
+      text-align: right;
+      box-sizing: border-box;
+      //   ::v-deep 相当less中的/deep/
+      ::v-deep .emui-button:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+  // 拟态风格
+  .emui-dialog.mimicry {
+    border-radius: 12px;
+    box-shadow: inset 7px 14px 23px #dadada, inset -7px -14px 23px #eeeeee;
+  }
+}
+.dialog-fade-enter-active {
+  animation: fade 0.5s;
+}
+.dialog-fade-leave-active {
+  animation: fade 0.39s reverse;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-3vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
