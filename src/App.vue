@@ -11,7 +11,17 @@
         <template slot="title">关于</template>
         <emui-nav-item name="culture">企业文化</emui-nav-item>
         <emui-nav-item name="developers">开发团队</emui-nav-item>
-        <emui-nav-item name="contacts">联系电话</emui-nav-item>
+        <emui-sub-nav>
+          <template slot="title">联系电话</template>
+          <emui-nav-item name="wechat">微信</emui-nav-item>
+          <emui-nav-item name="qq">QQ</emui-nav-item>
+          <emui-sub-nav>
+            <template slot="title">通信</template>
+            <emui-nav-item name="cm">移动</emui-nav-item>
+            <emui-nav-item name="cu">联通</emui-nav-item>
+            <emui-nav-item name="cn">电信</emui-nav-item>
+          </emui-sub-nav>
+        </emui-sub-nav>
       </emui-sub-nav>
       <emui-nav-item name="hire">测试</emui-nav-item>
     </emui-nav>

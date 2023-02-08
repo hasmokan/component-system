@@ -31,8 +31,7 @@ export default {
   > span {
     //可触面积过小
     padding: 10px 20px;
-    display: inline-block;
-    vertical-align: top;
+    display: block;
   }
   &-popover {
     position: absolute;
@@ -40,6 +39,17 @@ export default {
     left: 0;
     border: 1px solid black;
     white-space: nowrap;
+  }
+  .emui-sub-nav {
+    .emui-sub-nav {
+      &-popover {
+        // position: absolute;
+
+        top: 0%;
+        left: 100%;
+        margin-left: 8px;
+      }
+    }
   }
 }
 </style>
