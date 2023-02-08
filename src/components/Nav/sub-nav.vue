@@ -12,6 +12,12 @@
 <script>
 export default {
   name: "emui-sub-nav",
+  props: {
+    name: {
+      type: String,
+      require: true,
+    },
+  },
   data() {
     return {
       open: false,

@@ -84,6 +84,6 @@ export default {
 <style lang="scss">
 .emui-nav {
   display: flex;
-  border: 1px solid red;
+  border-bottom: 1px solid grey;
 }
 </style>

@@ -24,17 +24,28 @@ export default {
   methods: {
     onClick() {
       this.$emit("add:selected", this.name); //通知父组件,发回一个事件
+      this.$parent.x();
     },
   },
 };
 </script>
 
 <style lang="scss">
+@import "@/styles/nav";
+@import "@/styles/common/scss/color";
 .emui-nav-item {
   padding: 10px 20px;
+  position: relative;
   //被选中的
   &.selected {
-    background: red;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-bottom: 2px solid $blue;
+      width: 100%;
+    }
   }
 }
 </style>
