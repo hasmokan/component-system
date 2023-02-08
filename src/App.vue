@@ -53,12 +53,30 @@
       <emui-Button type="dangerwhite" circle>测试</emui-Button>
       <emui-Button type="dangergold" circle>测试</emui-Button>
     </div>
+    <div>
+      <emui-Button type="primarywhite" @click="messageOpenMeth('primarywhite')">连续点击我</emui-Button>
+      <emui-Button type="successwhite" @click="messageOpenMeth('successwhite')">连续点击我</emui-Button>
+      <emui-Button type="warning" @click="messageOpenMeth('warning')">连续点击我</emui-Button>
+      <emui-Button type="dangerwhite" @click="messageOpenMeth('dangerwhite')">连续点击我</emui-Button>
+    </div>
   </div>
 </template>
 
 <script>
+import "./components/message/index"
 export default {
   name: "App",
+  mounted() {
+  },
+  methods:{
+    messageOpenMeth(type){
+      this.$notice.open({
+        title:'Hello World',
+        center:true,
+        type:type
+      })
+    }
+  }
 };
 </script>
 

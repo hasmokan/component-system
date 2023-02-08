@@ -1,0 +1,72 @@
+diff a/src/styles/message.scss b/src/styles/message.scss	(rejected hunks)
+@@ -1,69 +0,0 @@
+-.emui-message {
+-  width: 380px;
+-  -webkit-box-sizing: border-box;
+-  box-sizing: border-box;
+-  border-width: 1px;
+-
+-  border-style: solid;
+-  border-color: #ebeef5;
+-  position: fixed;
+-  z-index: 99999;
+-  line-height: 20px;
+-  transition: top 0.5s;
+-  background-color: #edf2fc;
+-  padding: 15px 15px 15px 20px;
+-  display: flex;
+-  -webkit-box-align: center;
+-  -ms-flex-align: center;
+-  align-items: center;
+-  border-radius: 5px;
+-}
+-
+-.close-btn {
+-  position: absolute;
+-  right: 10px;
+-  top: 10px;
+-  cursor: pointer;
+-}
+-
+-.message-fade-enter,
+-.message-fade-leave-to {
+-  opacity: 0;
+-  transform: translateY(-100px);
+-}
+-
+-.message-fade-enter-active,
+-.message-fade-leave-active {
+-  transition: opacity 0.5s, transform 0.5s;
+-}
+-
+-.emui-message--success {
+-  background-color: #f0f9eb;
+-  border-color: #e1f3d8;
+-}
+-
+-.emui-message--success .emui-message__content {
+-  color:  rgba(50, 136, 143, 0.2);
+-}
+-
+-.emui-message--warning {
+-  background-color: #fdf6ec;
+-  border-color: #faecd8;
+-}
+-
+-.emui-message--warning .emui-message__content {
+-  color: rgba(219, 207, 33, 0.44);
+-}
+-
+-.emui-message--error {
+-  background-color: #fef0f0;
+-  border-color: #fde2e2;
+-}
+-
+-.emui-message--error .emui-message__content {
+-  color:  rgba(230, 48, 48, 0.22);
+-}
+-
+-.emui-message--info .emui-message__content {
+-  color: rgba(101, 143, 50, 0.2);
+-}
+\ No newline at end of file
