@@ -11,6 +11,7 @@ export default {
   data() {
     return {
       items: [],
+      namePath: [], //用于存放 寻找父节点的路径
     };
   },
   provide() {
@@ -87,5 +88,8 @@ export default {
 .emui-nav {
   display: flex;
   border-bottom: 1px solid $grey;
+  color: $color;
+  cursor: default;
+  user-select: none;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="emui-sub-nav" :class="{ active }">
+  <div class="emui-sub-nav" :class="{ active }" v-click-outside="close">
     <span @click="onClick">
       <slot name="title"></slot>
     </span>
@@ -22,6 +22,7 @@ export default {
   data() {
     return {
       open: false,
+      active: false,
     };
   },
   methods: {
@@ -65,7 +66,7 @@ export default {
     border: 1px;
     white-space: nowrap;
     box-shadow: 0 0 3px fade_out(black, 0.85);
-    border-radius: 10px;
+    border-radius: 3px;
   }
   .emui-sub-nav {
     .emui-sub-nav {
