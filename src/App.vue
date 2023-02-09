@@ -73,14 +73,6 @@
       <emui-Button type="dangerwhite" circle>测试</emui-Button>
       <emui-Button type="dangergold" circle>测试</emui-Button>
     </div>
-<<<<<<< HEAD
-    <div>
-      <emui-Button type="primarywhite" @click="messageOpenMeth('primarywhite')">连续点击我</emui-Button>
-      <emui-Button type="successwhite" @click="messageOpenMeth('successwhite')">连续点击我</emui-Button>
-      <emui-Button type="warning" @click="messageOpenMeth('warning')">连续点击我</emui-Button>
-      <emui-Button type="dangerwhite" @click="messageOpenMeth('dangerwhite')">连续点击我</emui-Button>
-    </div>
-=======
 
     <emui-radio-button label="北京" v-model="input"></emui-radio-button>
     <emui-radio-button label="北京"></emui-radio-button>
@@ -95,27 +87,31 @@
       <emui-radio-button label="上海" disabled />
       <emui-radio-button label="西安" />
     </emui-radio-group>
->>>>>>> de80b344a340c07821428e2c882edf15c657b3df
+
+      <emui-Button type="primarywhite" @click="messageOpenMeth('info')">info的Message提示</emui-Button>
+      <emui-Button type="successwhite" @click="messageOpenMeth('success')">success的Message提示</emui-Button>
+      <emui-Button type="warning" @click="messageOpenMeth('warning')">warning的Message提示</emui-Button>
+      <emui-Button type="dangerwhite" @click="messageOpenMeth('error')">error的Message提示</emui-Button>
+
   </div>
 </template>
 
 <script>
-import "./components/message/index"
+// import "./components/message/index"
 export default {
   name: "App",
-<<<<<<< HEAD
   mounted() {
   },
   methods:{
     messageOpenMeth(type){
       this.$notice.open({
-        title:'Hello World',
+        title:"这是一条提示文字",
         center:true,
         type:type
-      })
+      });
     }
-  }
-=======
+  },
+
   data() {
     return {
       value: "",
@@ -125,7 +121,6 @@ export default {
       visiable1: false,
     };
   },
->>>>>>> de80b344a340c07821428e2c882edf15c657b3df
 };
 </script>
 
