@@ -24,7 +24,7 @@ export default {
   methods: {
     onClick() {
       this.root.namePath = []; //存放选中的路径
-      this.$parent.updateNamePath() && this.$parent.updateNamePath;
+      this.$parent.updateNamePath && this.$parent.updateNamePath();
       this.$emit("add:selected", this.name); //通知父组件,发回一个事件
     },
   },
