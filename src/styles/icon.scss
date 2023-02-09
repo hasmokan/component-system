@@ -3,13 +3,16 @@
 //引入江西拙楷字体
 @import "./common/scss/font.scss";
 
-$background-color-default:white;
-
 .emui-icon {
-    background-color:$background-color-default;
-    width: 920px;
+    background-color: white;
+    display: inline-block;
+    // display: grid;
+    // grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+    // grid-template-rows: 100px 100px;
+    overflow:visible;
 }
-svg,image{
-    width: 75px;
-    height: 75px;
+
+img{
+    width: 100px;
+    height: 100px;
 }

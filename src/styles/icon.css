@@ -10,10 +10,11 @@
 
 .emui-icon {
   background-color: white;
-  width: 920px;
+  display: inline-block;
+  overflow: visible;
 }
 
-svg, image {
-  width: 75px;
-  height: 75px;
+img {
+  width: 100px;
+  height: 100px;
 }

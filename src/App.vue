@@ -89,7 +89,36 @@
     </emui-radio-group>
 
     <!--  -->
-      <emui-Icon></emui-Icon>
+    <div>
+      <emui-Icon iconName="emui-add-red-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style2"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style2"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style2"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style2"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style2"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style2"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-red-style2"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+      <emui-Icon iconName="emui-add-blue-style1"></emui-Icon>
+    </div>
     <!--  -->
   </div>
 </template>
