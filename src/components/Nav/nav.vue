@@ -1,6 +1,5 @@
 <template>
   <div class="emui-nav">
-    {{ namePath }}
     <slot></slot>
   </div>
 </template>

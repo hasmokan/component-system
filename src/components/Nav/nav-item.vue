@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     onClick() {
-      this.root.namePath = [];
+      this.root.namePath = []; //存放选中的路径
       this.$parent.updateNamePath() && this.$parent.updateNamePath;
       this.$emit("add:selected", this.name); //通知父组件,发回一个事件
     },
@@ -37,7 +37,6 @@ export default {
 .emui-nav-item {
   padding: 10px 20px;
   position: relative;
-  //被选中的
   &.selected {
     &::after {
       content: "";
@@ -46,6 +45,15 @@ export default {
       left: 0;
       border-bottom: 2px solid $blue;
       width: 100%;
+    }
+  }
+}
+.emui-sub-nav .emui-nav-item {
+  &.selected {
+    color: $color;
+    background: $grey;
+    &::after {
+      display: none;
     }
   }
 }
