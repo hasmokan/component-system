@@ -1,5 +1,6 @@
 <template>
   <div class="emui-nav">
+    {{ namePath }}
     <slot></slot>
   </div>
 </template>
@@ -82,8 +83,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/styles/nav";
 .emui-nav {
   display: flex;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid $grey;
 }
 </style>
