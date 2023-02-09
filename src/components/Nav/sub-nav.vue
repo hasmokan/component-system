@@ -3,7 +3,7 @@
     <span class="emui-sub-nav-label" @click="onClick">
       <slot name="title"></slot>
       <span class="emui-sub-nav-icon" :class="{ open }">
-        <g-icon name="right"></g-icon>
+        <!-- <g-icon name="right"></g-icon> -->
       </span>
     </span>
     <div class="emui-sub-nav-popover" v-show="open">
