@@ -1,0 +1,14 @@
+Tag：
+
+        size有三种值可以选，default，large，small
+        type:{type:String,default:'success'},
+        type 有四种值可以选success/info/warning/danger，对应四种颜色
+        closable选择是否有关闭按钮
+        hit选择是否有边框
+
+        effect：dark / light / plain亮暗程度
+        round：是否为圆形
+（分类的时候组合比较多，只实现了其中的部分，我写了几个测试）
+progress：
+	size：选择large或者small
+	progress：绑定加载的进度百分比

@@ -24,6 +24,8 @@ import emuiCheckBox from "./components/CheckBox/checkbox"
 import emuiCheckBoxGroup from "./components/CheckBox/checkboxGroup"
 import emuiSelect from "./components/Select/select"
 import emuiOption from "./components/Select/option"
+import emuiTag from "@/components/Tag/Tag1.vue"
+import emuiProgess from "@/components/progress/ProGress.vue"
 import "@/assets/iconfont/iconfont.css"
 import "./components/Icon/icon.js"
 
@@ -53,6 +55,8 @@ Vue.prototype.$notice = Message;
 Vue.component(emuiSelect.name, emuiSelect)
 Vue.component(emuiOption.name, emuiOption)
 
+Vue.component(emuiTag.name, emuiTag)
+Vue.component(emuiProgess.name, emuiProgess)
 
 new Vue({
   render: h => h(App),

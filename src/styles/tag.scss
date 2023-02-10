@@ -1,0 +1,152 @@
+@import "./common/scss/color.scss";
+@import "./common/scss/font.scss";
+div{
+    position: relative;
+    display: inline-block;
+    font-family: "jiangxizhuokai";
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 15px;
+    border-radius: 10%;
+
+}
+
+.default{
+   font-size: medium;
+   height: 30px;
+   line-height: 30px;
+}
+.small{
+    font-size: small;
+    height: 20px;
+    line-height: 20px;
+}
+.large{
+    font-size:large;
+    height: 40px;
+    line-height: 40px;
+}
+.success.dark{
+    background-color:$primary-color;
+    color: $font-gold-color;
+    .remove{
+        cursor: pointer;
+        padding: 5px;
+        position: absolute;
+        top: 8px;
+        border-radius: 50%;
+        right: 10px;
+        height: 15px;
+        // width: 15px;
+        line-height: 15px;
+        &:hover{
+            background-color:$primary-color;
+            color: $font-gold-color;
+        }
+    }
+}
+.success.light{
+    background-color:$success-color;
+    color: $font-gold-color;
+    .remove{
+        cursor: pointer;
+        position: absolute;
+        padding: 5px;
+        top: 8px;
+        border-radius: 50%;
+        height: 15px;
+        // width: 15px;
+        line-height: 15px;
+        right: 10px;
+        &:hover{
+            background-color:$primary-color;
+            color: $font-gold-color;
+        }
+    }
+}
+.success.plain{
+    background-color:rgb(255, 255, 255);
+    .remove{
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        padding: 5px;
+        height: 15px;
+        // width: 15px;
+        top: 8px;
+        
+        line-height: 15px;
+        right: 10px;
+        &:hover{
+            background-color:$primary-color;
+            color: $font-gold-color;
+        }
+    }
+}
+
+.success.hit{
+    border: 1px solid rgb(25, 96, 184);
+}
+.warning.dark{
+    background-color:$warning-color;
+    color: $font-black-color;
+    .remove{
+        cursor: pointer;
+        padding: 5px;
+        position: absolute;
+        top: 8px;
+        border-radius: 50%;
+        right: 10px;
+        height: 15px;
+        // width: 15px;
+        line-height: 15px;
+        &:hover{
+            background-color:$warning-color;
+            color: $font-gold-color;
+        }
+    }
+}
+.warning.light{
+    background-color:$warning-active-color;
+    color: $font-black-color;
+    .remove{
+        cursor: pointer;
+        position: absolute;
+        padding: 5px;
+        top: 8px;
+        border-radius: 50%;
+        height: 15px;
+        // width: 15px;
+        line-height: 15px;
+        right: 10px;
+        &:hover{
+            background-color:$warning-active-color;
+            color: $font-gold-color;
+        }
+    }
+}
+.warning.plain{
+    border: 1px solid $warning-active-color;
+    background-color:rgb(255, 255, 255);
+    .remove{
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        padding: 5px;
+        height: 15px;
+        // width: 15px;
+        top: 8px;
+        
+        line-height: 15px;
+        right: 10px;
+        &:hover{
+            background-color:$warning-active-color;
+            color: $font-gold-color;
+        }
+    }
+}
+
+.warning.hit{
+    border: 1px solid $warning-color;
+}
