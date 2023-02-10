@@ -262,8 +262,7 @@
       :data="dataSource"
       bordered
       compact
-      selected
-      :selectedItems.sync="selected"
+      :selectedItems.sync="selectedItems"
       :orderBy.sync="orderBy"
       :loadding="loading"
       height="200"
@@ -276,15 +275,6 @@
 export default {
   name: "App",
   mounted() {},
-  methods: {
-    messageOpenMeth(type) {
-      this.$notice.open({
-        title: "这是一条提示文字",
-        center: true,
-        type: type,
-      });
-    },
-  },
 
   data() {
     return {
@@ -342,7 +332,7 @@ export default {
         { id: 12, name: "laoliu", score: 100 },
         { id: 13, name: "laoliu", score: 100 },
       ],
-      selected: [],
+      selectedItems: [],
       orderBy: {
         name: "asc", //升序
         score: "desc", //降序
@@ -364,16 +354,18 @@ export default {
       // let {selected,index,item}=info;
       console.log(info);
     },
+     messageOpenMeth(type) {
+      this.$notice.open({
+        title: "这是一条提示文字",
+        center: true,
+        type: type,
+      });
+    },
   },
 };
 </script>
 
-<<<<<<< HEAD
-<style scoped lang="scss">
-</style>
-=======
 
 <style scoped lang="scss">
 
 </style>;
->>>>>>> ea96c64 (table基本完成)
