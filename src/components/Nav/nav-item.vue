@@ -51,7 +51,7 @@ export default {
 .emui-sub-nav .emui-nav-item {
   &.selected {
     color: $color;
-    background: $grey;
+    background: grey;
     &::after {
       display: none;
     }

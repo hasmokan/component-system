@@ -1,5 +1,6 @@
 <template>
-  <div class="emui-nav">
+  <div class="emui-nav" :class="{ vertical: vertical }">
+    <!-- 满足vertical属性则给类加上vetical -->
     <slot></slot>
   </div>
 </template>
@@ -16,6 +17,7 @@ export default {
   provide() {
     return {
       root: this,
+      vertical: this.vertical,
     };
   },
   props: {
@@ -24,6 +26,10 @@ export default {
       default: () => [],
     },
     multiple: {
+      type: Boolean,
+      default: false,
+    },
+    vertical: {
       type: Boolean,
       default: false,
     },
@@ -90,5 +96,9 @@ export default {
   color: $color;
   cursor: default;
   user-select: none;
+  &.vertical {
+    flex-direction: column;
+    border-right: 1px solid $grey;
+  }
 }
 </style>

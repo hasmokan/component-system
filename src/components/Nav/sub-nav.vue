@@ -6,9 +6,23 @@
         <!-- <g-icon name="right"></g-icon> -->
       </span>
     </span>
-    <div class="emui-sub-nav-popover" v-show="open">
-      <slot></slot>
-    </div>
+    <template v-if="vertical">
+      <transition
+        @enter="enter"
+        @leave="leave"
+        @after-leave="afterLeave"
+        @after-enter="afterEnter"
+      >
+        <div class="emui-sub-nav-popover" v-show="open" :class="{ vertical }">
+          <slot></slot>
+        </div>
+      </transition>
+    </template>
+    <template v-else>
+      <div class="emui-sub-nav-popover" v-show="open" :class="{ vertical }">
+        <slot></slot>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -19,7 +33,7 @@ export default {
   // components: {GIcon},
   directives: { ClickOutside },
   name: "emui-sub-nav",
-  inject: ["root"],
+  inject: ["root", "vertical"], //依赖注入 竖向属性
   props: {
     name: {
       type: String,
@@ -37,6 +51,33 @@ export default {
     },
   },
   methods: {
+    enter(el, done) {
+      el.style.height = "auto";
+      //进入的动画
+      let { height } = el.getBoundingClientRect();
+      el.style.height = 0;
+      el.getBoundingClientRect();
+      el.style.height = `${height}px`;
+      el.addEventListener("transitionend", () => {
+        done();
+      });
+    },
+    afterEnter(el) {
+      el.style.height = "auto";
+    },
+    leave(el, done) {
+      let { height } = el.getBoundingClientRect();
+      el.style.height = `${height}px`;
+      el.getBoundingClientRect();
+      el.style.height = 0;
+      el.addEventListener("transitionend", () => {
+        //防止 done后直接关闭动画,所以结束后再关闭动画
+        done();
+      });
+    },
+    afterLeave(el) {
+      el.style.height = "auto";
+    },
     onClick() {
       this.open = !this.open;
     },
@@ -56,6 +97,13 @@ export default {
 </script>
 <style lang="scss">
 @import "@/styles/nav.scss";
+.x-enter-active,
+.x-leave-active {
+}
+.x-enter,
+.x-leave-to {
+}
+
 .emui-sub-nav {
   position: relative;
   &.active {
@@ -82,11 +130,21 @@ export default {
     left: 0;
     margin-top: 4px;
     white-space: nowrap;
-    box-shadow: 0 0 3px fade_out(black, 0.8);
+    box-shadow: 0 0 3px x_out(black, 0.8);
     border-radius: $border-radius;
     font-size: $font-size;
     color: $light-color;
+    transition: height 250ms;
     min-width: 8em;
+    &.vertical {
+      //满足vertical时
+
+      position: static;
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+      overflow: hidden; //可以遮挡还没出来的 div 达到隐藏的效果
+    }
   }
 }
 .emui-sub-nav .emui-sub-nav {
@@ -112,7 +170,7 @@ export default {
     svg {
       fill: $light-color;
     }
-    &.open {
+    &.x {
       transform: rotate(180deg);
     }
   }
