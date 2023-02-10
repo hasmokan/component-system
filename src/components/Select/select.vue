@@ -74,52 +74,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/common/scss/color";
-.v-enter,
-.v-leave-to{
-    opacity: 0;
-}
-.v-enter-active,
-.v-leave-active{
-    transition: all .8s;
-}
-.select {
-  display: inline-block;
-  .title {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    height: 30px;
-    line-height: 30px;
-    padding: 3px 10px;
-    border: 2px solid $primary-color;
-    border-radius: 5px;
-    span {
-      /* 一行显示，超长省略号 */
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .placeholder{
-        color: #ccc;
-    }
-  }
-  .options{
-    margin-top: 10px;
-    position: absolute;;
-    border-radius: 5px;
-    z-index: 999;
-    background-color: $background-color;
-    &::before{
-        content: '';
-        position: absolute;
-        display: block;
-        border: 8px solid transparent;
-        border-bottom-color: $background-color;
-        top: -16px;
-        left: 27px;
-        z-index: inherit;
-    }
-  }
-}
+@import "@/styles/select.scss";
 </style>

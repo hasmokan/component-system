@@ -26,6 +26,7 @@ import emuiSelect from "./components/Select/select"
 import emuiOption from "./components/Select/option"
 import emuiTag from "@/components/Tag/Tag1.vue"
 import emuiProgess from "@/components/progress/ProGress.vue"
+import emuiTable from "./components/Table/table"
 import "@/assets/iconfont/iconfont.css"
 import "./components/Icon/icon.js"
 
@@ -57,6 +58,18 @@ Vue.component(emuiOption.name, emuiOption)
 
 Vue.component(emuiTag.name, emuiTag)
 Vue.component(emuiProgess.name, emuiProgess)
+Vue.component(emuiButton.name,emuiButton)
+Vue.component(emuiInput.name,emuiInput)
+Vue.component(emuiRadio.name,emuiRadio)
+Vue.component(emuiRadioButton.name,emuiRadioButton)
+Vue.component(emuiRadioGroup.name,emuiRadioGroup)
+Vue.component(emuiForm.name,emuiForm)
+Vue.component(emuiFormItem.name,emuiFormItem)
+Vue.component(emuiCheckBox.name,emuiCheckBox)
+Vue.component(emuiCheckBoxGroup.name,emuiCheckBoxGroup)
+Vue.component(emuiSelect.name,emuiSelect)
+Vue.component(emuiOption.name,emuiOption)
+Vue.component(emuiTable.name,emuiTable)
 
 new Vue({
   render: h => h(App),
