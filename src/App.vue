@@ -1,20 +1,25 @@
 <template>
   <div id="app">
-    <emui-Input type="password" v-model="input" size="large"></emui-Input>
-    <emui-Input type="password" v-model="input" size="small"></emui-Input>
-    <emui-Button type="primarygold" @click="visiable = true"
-      >对话框dialog
-    </emui-Button>
-    <emui-Dialog title="emui提示您" :visiable.sync="visiable">
-      <!-- .sync等同于 visiable="false" @update:visable,false -->
-      你好，欢迎使用emui组件库
-      <template v-slot:footer>
-        <emui-Button type="primarygold" @click="visiable = false" mimicry
-          >确定</emui-Button
-        >
-        <emui-Button @click="visiable = false">取消</emui-Button>
-      </template>
-    </emui-Dialog>
+    <emui-nav :selected.sync="selected" style="margin: 20px 0 0 20px">
+      <emui-nav-item name="home">首页</emui-nav-item>
+      <emui-sub-nav name="about">
+        <template slot="title">关于</template>
+        <emui-nav-item name="culture">企业文化</emui-nav-item>
+        <emui-nav-item name="developers">开发团队</emui-nav-item>
+        <emui-sub-nav name="contacts">
+          <template slot="title">联系电话</template>
+          <emui-nav-item name="wechat">微信</emui-nav-item>
+          <emui-nav-item name="qq">QQ</emui-nav-item>
+          <emui-sub-nav name="phone">
+            <template slot="title">通信</template>
+            <emui-nav-item name="cm">移动</emui-nav-item>
+            <emui-nav-item name="cu">联通</emui-nav-item>
+            <emui-nav-item name="cn">电信</emui-nav-item>
+          </emui-sub-nav>
+        </emui-sub-nav>
+      </emui-sub-nav>
+      <emui-nav-item name="hire">测试</emui-nav-item>
+    </emui-nav>
 
     <emui-Button type="primarygold" @click="visiable1 = true"
       >对话框dialog2
@@ -160,6 +165,30 @@
       <emui-Icon name="emui-arrow-left"></emui-Icon>
     </div>
     <!--  -->
+    <!-- <emui-nav
+      :selected.sync="selected"
+      vertical
+      style="width: 200px; margin: 20px 0 0 20px"
+    >
+      <emui-nav-item name="home">首页</emui-nav-item>
+      <emui-sub-nav name="about">
+        <template slot="title">关于</template>
+        <emui-nav-item name="culture">企业文化</emui-nav-item>
+        <emui-nav-item name="developers">开发团队</emui-nav-item>
+        <emui-sub-nav name="contacts">
+          <template slot="title">联系电话</template>
+          <emui-nav-item name="wechat">微信</emui-nav-item>
+          <emui-nav-item name="qq">QQ</emui-nav-item>
+          <emui-sub-nav name="phone">
+            <template slot="title">通信</template>
+            <emui-nav-item name="cm">移动</emui-nav-item>
+            <emui-nav-item name="cu">联通</emui-nav-item>
+            <emui-nav-item name="cn">电信</emui-nav-item>
+          </emui-sub-nav>
+        </emui-sub-nav>
+      </emui-sub-nav>
+      <emui-nav-item name="hire">测试</emui-nav-item>
+    </emui-nav> -->
   </div>
 </template>
 
@@ -173,10 +202,11 @@ export default {
       button: "",
       visiable: false,
       visiable1: false,
+      selected: ["culture"],
     };
   },
 };
 </script>
 
 <style scoped lang="scss">
-</style>;
+</style>
