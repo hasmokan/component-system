@@ -12,9 +12,10 @@
   background-color: white;
   display: inline-block;
   overflow: visible;
+  font-size: 3px;
 }
 
-img {
-  width: 100px;
-  height: 100px;
+h1 {
+  width: 90px;
+  text-align: center;
 }

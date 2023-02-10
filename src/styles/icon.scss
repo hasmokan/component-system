@@ -6,13 +6,10 @@
 .emui-icon {
     background-color: white;
     display: inline-block;
-    // display: grid;
-    // grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
-    // grid-template-rows: 100px 100px;
     overflow:visible;
+    font-size: 3px;
 }
-
-img{
-    width: 100px;
-    height: 100px;
+h1{
+    width: 90px;
+    text-align: center;
 }

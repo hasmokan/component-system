@@ -1,15 +1,11 @@
 <template>
   <div :class="['emui-icon', 'emui-icon']">
-    <svg :style="{ width: '90px', height: '90px' }">
-      <!-- <image
-        :xlink:href="item.class.link"
-        :style="{ width: '90px', height: '90px' }"
-      /> -->
-      <image
-        :xlink:href="className"
-        :style="{ width: '90px', height: '90px' }"
-      />
-    </svg>
+    <div>
+      <svg :style="{ width, height }">
+        <image :xlink:href="className" :style="{ width, height }" />
+      </svg>
+      <h1>{{ name }}</h1>
+    </div>
   </div>
 </template>
 
@@ -24,20 +20,18 @@ export default {
   },
   computed: {
     className() {
-      console.log(this.iconName);
       for (let i = 0; i < icon.length; i++) {
-        if (icon[i].class.name == this.iconName) {
+        if (icon[i].class.name == this.name) {
           var link = icon[i].class.link;
-          console.log(link);
+          console.log();
           break;
         }
       }
-      console.log(link, "@");
       return link;
     },
   },
   props: {
-    iconName: {
+    name: {
       type: String,
       default: "",
     },
@@ -49,18 +43,10 @@ export default {
       type: String,
       default: "75px",
     },
-    disabled: {
-      type: String,
-      default: "",
-    },
   },
 };
 </script>
 
 <style lang="scss">
 @import "@/styles/icon.scss";
-img {
-  width: 200px;
-  height: 200px;
-}
 </style>
