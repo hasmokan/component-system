@@ -1,6 +1,15 @@
-import Vue from 'vue'
+// import Vue from 'vue'
+import Vue from 'vue/dist/vue.esm.js'
 import App from './App.vue'
 import emuiButton from "./components/Button/button"
+
+import Message from "./components/Message/index"
+
+
+Vue.config.productionTip = false
+Vue.component(emuiButton.name,emuiButton)
+// Vue.use(Message)
+
 import emuiDialog from "./components/dialog/dialog"
 import emuiInput from "./components/Input/input"
 import emuiRadio from "./components/Radio/radio"
@@ -30,6 +39,9 @@ Vue.component(emuiNav.name, emuiNav)
 Vue.component(emuiSubNav.name, emuiSubNav)
 
 
+
+
+Vue.prototype.$notice = Message;
 
 new Vue({
   render: h => h(App),

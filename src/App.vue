@@ -93,6 +93,19 @@
       <emui-radio-button label="西安" />
     </emui-radio-group>
 
+    <emui-Button type="primarywhite" @click="messageOpenMeth('info')"
+      >info的Message提示</emui-Button
+    >
+    <emui-Button type="successwhite" @click="messageOpenMeth('success')"
+      >success的Message提示</emui-Button
+    >
+    <emui-Button type="warning" @click="messageOpenMeth('warning')"
+      >warning的Message提示</emui-Button
+    >
+    <emui-Button type="dangerwhite" @click="messageOpenMeth('error')"
+      >error的Message提示</emui-Button
+    >
+
     <!--  -->
     <div>
       <emui-Icon name="emui-add-blue-style1"></emui-Icon>
@@ -193,8 +206,20 @@
 </template>
 
 <script>
+// import "./components/message/index"
 export default {
   name: "App",
+  mounted() {},
+  methods: {
+    messageOpenMeth(type) {
+      this.$notice.open({
+        title: "这是一条提示文字",
+        center: true,
+        type: type,
+      });
+    },
+  },
+
   data() {
     return {
       value: "",
