@@ -131,6 +131,24 @@
     <emui-Button type="dangerwhite" @click="messageOpenMeth('error')"
       >error的Message提示</emui-Button
     >
+    <emui-tag :size="size"> 4444 </emui-tag>&nbsp;&nbsp;&nbsp;&nbsp;
+    <emui-tag :size="size" closable="true"> 4444 </emui-tag
+    >&nbsp;&nbsp;&nbsp;&nbsp;
+    <emui-tag :size="size" closable="true" hit="true"> 4444 </emui-tag>
+    <hr />
+    <emui-tag
+      :size="size"
+      closable="true"
+      hit="true"
+      :type="type"
+      effect="dark"
+    >
+      4444
+    </emui-tag>
+    <hr />
+    <emui-progress :progress="progress"></emui-progress>
+    <hr />
+    <emui-progress :progress="progress" size="large"></emui-progress>
   </div>
 </template>
 
@@ -157,6 +175,9 @@ export default {
       visiable: false,
       visiable1: false,
       selected: ["culture"],
+      size: "large",
+      type: "warning",
+      progress: 40,
     };
   },
 };

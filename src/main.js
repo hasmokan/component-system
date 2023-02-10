@@ -19,6 +19,8 @@ import emuiNav from "./components/Nav/nav"
 import emuiNavItem from "./components/Nav/nav-item"
 import emuiSubNav from "./components/Nav/sub-nav"
 import emuiIcon from "./components/Icon/icon.vue"
+import emuiTag from "@/components/Tag/Tag1.vue"
+import emuiProgess from "@/components/progress/ProGress.vue"
 import "@/assets/iconfont/iconfont.css"
 import "./components/Icon/icon.js"
 
@@ -42,6 +44,8 @@ Vue.component(emuiSubNav.name, emuiSubNav)
 
 
 Vue.component(emuiIcon.name, emuiIcon)
+Vue.component(emuiTag.name, emuiTag)
+Vue.component(emuiProgess.name, emuiProgess)
 
 new Vue({
   render: h => h(App),
