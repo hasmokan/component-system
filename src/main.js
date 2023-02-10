@@ -37,25 +37,18 @@ Vue.component(emuiButton.name, emuiButton)
 Vue.component(emuiInput.name, emuiInput)
 Vue.component(emuiRadio.name, emuiRadio)
 Vue.component(emuiRadioButton.name, emuiRadioButton)
-
 Vue.component(emuiRadioGroup.name, emuiRadioGroup)
 Vue.component(emuiForm.name, emuiForm)
 Vue.component(emuiFormItem.name, emuiFormItem)
 Vue.component(emuiCheckBox.name, emuiCheckBox)
 Vue.component(emuiCheckBoxGroup.name, emuiCheckBoxGroup)
 Vue.component(emuiIcon.name, emuiIcon)
-
 Vue.component(emuiNavItem.name, emuiNavItem)
 Vue.component(emuiNav.name, emuiNav)
 Vue.component(emuiSubNav.name, emuiSubNav)
-
-
-
-
 Vue.prototype.$notice = Message;
 Vue.component(emuiSelect.name, emuiSelect)
 Vue.component(emuiOption.name, emuiOption)
-
 Vue.component(emuiTag.name, emuiTag)
 Vue.component(emuiProgess.name, emuiProgess)
 Vue.component(emuiButton.name,emuiButton)
@@ -70,6 +63,10 @@ Vue.component(emuiCheckBoxGroup.name,emuiCheckBoxGroup)
 Vue.component(emuiSelect.name,emuiSelect)
 Vue.component(emuiOption.name,emuiOption)
 Vue.component(emuiTable.name,emuiTable)
+Vue.component(emuiDialog.name, emuiDialog)
+Vue.component(emuiTable.name, emuiTable)
+
+
 
 new Vue({
   render: h => h(App),
