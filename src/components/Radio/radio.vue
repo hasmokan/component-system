@@ -79,11 +79,6 @@ export default {
         ? this.radioGroup.$emit("change", this.value)
         : this.$emit("change", this.value);
     },
-    isDisabled() {
-      return this.isGrouped
-        ? this.radioGroup.disabled || this.disabled
-        : this.disabled;
-    },
   },
 };
 </script>
