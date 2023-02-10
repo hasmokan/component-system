@@ -1,0 +1,98 @@
+//引入在线图标
+@import url('http://at.alicdn.com/t/c/font_3888617_r31bhbbh9wr.css');
+//引入江西拙楷字体
+@import "./common/scss/font.scss";
+.emui-message {
+  width: 380px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-width: 1px;
+
+  border-style: solid;
+  border-color: #ebeef5;
+  position: fixed;
+  z-index: 99999;
+  line-height: 20px;
+  transition: top 0.5s;
+  background-color: #edf2fc;
+  padding: 15px 15px 15px 20px;
+  display: flex;
+  -webkit-box-align:center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.title{
+  color: rgba(41, 115, 186, 0.8);
+  font-family: "jiangxizhuokai";
+}
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.message-fade-enter,
+.message-fade-leave {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.message-fade-enter-active,
+.message-fade-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.success {
+  background-color: rgba(101, 143, 50, 0.25);
+  border-color: #e1f3d8;
+  .icon{
+    margin-right: 5px;
+    color: rgba(101,143,50,0.6);
+
+  }
+}
+
+//.emui-message--success .emui-message__content {
+//  color:  rgba(50, 136, 143, 0.2);
+//}
+
+.warning {
+  background-color: rgba(219,207,33,0.44);
+  border-color: #faecd8;
+  .icon{
+    margin-right: 5px;
+    color: rgba(186,176,84,1);
+  }
+}
+
+//.emui-message--warning .emui-message__content {
+//  color: rgba(219, 207, 33, 0.44);
+//}
+
+.error {
+  background-color: #fef0f0;
+  border-color: #fde2e2;
+  .icon{
+    margin-right: 5px;
+    color: rgba(230,48,196,0.5);
+  }
+}
+
+//.emui-message--error .emui-message__content {
+//  color:  rgba(230, 48, 48, 0.22);
+//}
+.info{
+  background-color: #edf2fc;
+  border-color:  #ebeef5;
+  .icon{
+    margin-right: 5px;
+    color: rgba(67,140,255,0.6);
+  }
+}
+
+//.emui-message--info .emui-message__content {
+//  color: rgba(101, 143, 50, 0.2);
+//}
