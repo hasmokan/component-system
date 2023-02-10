@@ -11,6 +11,7 @@ import emuiCheckBox from "./components/CheckBox/checkbox"
 import emuiCheckBoxGroup from "./components/CheckBox/checkboxGroup"
 import emuiSelect from "./components/Select/select"
 import emuiOption from "./components/Select/option"
+import emuiTable from "./components/Table/table"
 import "@/assets/iconfont/iconfont.css"
 
 
@@ -26,7 +27,7 @@ Vue.component(emuiCheckBox.name,emuiCheckBox)
 Vue.component(emuiCheckBoxGroup.name,emuiCheckBoxGroup)
 Vue.component(emuiSelect.name,emuiSelect)
 Vue.component(emuiOption.name,emuiOption)
-
+Vue.component(emuiTable.name,emuiTable)
 
 new Vue({
   render: h => h(App),

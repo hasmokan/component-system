@@ -32,14 +32,25 @@
           ></emui-option>
         </emui-select>
       </emui-form-item>
-       <emui-form-item>
+      <emui-form-item>
         <emui-Button @click="handleSubmit">提交</emui-Button>
         <emui-Button @click="handleReset">重置</emui-Button>
       </emui-form-item>
     </emui-form>
+    <emui-table
+      :columns="columns"
+      :data="dataSource"
+      bordered
+      compact
+      selected
+      :selectedItems.sync="selected"
+      :orderBy.sync="orderBy"
+      :loadding="loading"
+      height="200"
+      expend-filed="description"
+    ></emui-table>
   </div>
 </template>
-
 <script>
 export default {
   name: "App",
@@ -65,7 +76,7 @@ export default {
             trigger: "change",
           },
         ],
-        myValue:[{required:true,message:"至少选择一项"}]
+        myValue: [{ required: true, message: "至少选择一项" }],
       },
       options: [
         { key: "key1", label: "选项1" },
@@ -76,6 +87,31 @@ export default {
         { key: "key6", label: "选项6" },
         { key: "key7", label: "选项7" },
       ],
+      columns: [
+        { text: "姓名", filed: "name" ,width:"230"},
+        { text: "分数", filed: "score" ,width:"230"},
+      ],
+      dataSource: [
+        { id: 1, name: "lili", score: 100 ,description:'score is ok'},
+        { id: 2, name: "bobo", score: 100 ,description:'score is ok'},
+        { id: 3, name: "siry", score: 100 },
+        { id: 4, name: "laoliu", score: 100 },
+        { id: 5, name: "laoliu", score: 100 },
+        { id: 6, name: "laoliu", score: 100 },
+        { id: 7, name: "laoliu", score: 100 },
+        { id: 8, name: "laoliu", score: 100 },
+        { id: 9, name: "laoliu", score: 100 },
+        { id: 10, name: "laoliu", score: 100 },
+        { id: 11, name: "laoliu", score: 100 },
+        { id: 12, name: "laoliu", score: 100 },
+        { id: 13, name: "laoliu", score: 100 },
+      ],
+      selected: [],
+      orderBy: {
+        name: "asc", //升序
+        score: "desc", //降序
+      },
+      loading: false,
     };
   },
   methods: {
@@ -88,9 +124,15 @@ export default {
     handleReset() {
       this.$refs.form.resetFields();
     },
+    changeItems(info) {
+      // let {selected,index,item}=info;
+      console.log(info);
+    },
   },
 };
 </script>
 
 
-<style scoped lang="scss"></style>;
+<style scoped lang="scss">
+
+</style>;
