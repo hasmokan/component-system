@@ -1,0 +1,26 @@
+//@import url(); 引入公共scss类
+@import "./common/scss/color.scss";
+//引入江西拙楷字体
+@import "./common/scss/font.scss";
+.checkbox {
+    padding: 5px;
+    display: inline-block;
+    .emui-checkbox-primary {
+      display: flex;
+      align-items: center;
+      .emui-checkbox {
+        width: 20px;
+        height: 20px;
+        &__disabled--true{
+          cursor: not-allowed;
+        }
+      }
+      .emui-checkbox-label {
+        margin-left: 5px;
+        vertical-align: middle;
+      }
+      .label-disabled{
+        color: #ccc;
+      }
+    }
+  }

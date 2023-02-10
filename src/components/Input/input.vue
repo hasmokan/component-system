@@ -13,8 +13,10 @@
       :placeholder="placeholder"
       :disabled="disabled"
       @input="handleInput"
+      @blur="handleBlur"
       v-model="currentValue"
       v-else
+      ref="input"
     />
     <span
       class="iconfont eyes"
@@ -34,15 +36,18 @@
 
 <script>
 import { check } from "@/utils/checkone";
+import Emitter from "@/mixins/emitter";
 export default {
-  name: "emui-Input",
+  name: "emui-input",
   data() {
     return {
       currentValue: this.value,
-      currentType: this.type,
-      isShow: false,
+      currentType:this.type,
+      isShow:false,
+
     };
   },
+  mixins:[Emitter],
   watch: {
     value(newvalue) {
       this.currentValue = newvalue;
@@ -102,6 +107,10 @@ export default {
       const value = e.target.value;
       this.currentValue = value;
       this.$emit("input", value);
+      this.dispatch('emui-form-item','form-change',value)
+    },
+    handleBlur(){
+      this.dispatch('emui-form-item','form-blur',this.currentValue);
     },
     changeyes() {
       this.isShow = !this.isShow;
