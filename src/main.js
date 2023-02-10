@@ -7,9 +7,9 @@ import emuiRadio from "./components/Radio/radio"
 import emuiRadioButton from "./components/Radio/RadioButton"
 import emuiRadioGroup from "./components/Radio/RadioGroup"
 import emuiIcon from "./components/Icon/icon.vue"
+import emuiLink from "./components/Link/link"
 import "@/assets/iconfont/iconfont.css"
 import "./components/Icon/icon.js"
-
 
 
 Vue.config.productionTip = false
@@ -20,6 +20,7 @@ Vue.component(emuiRadio.name, emuiRadio)
 Vue.component(emuiRadioButton.name, emuiRadioButton)
 Vue.component(emuiRadioGroup.name, emuiRadioGroup)
 Vue.component(emuiIcon.name, emuiIcon)
+Vue.component(emuiLink.name, emuiLink)
 
 new Vue({
   render: h => h(App),

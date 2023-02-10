@@ -88,7 +88,6 @@
       <emui-radio-button label="西安" />
     </emui-radio-group>
 
-    <!--  -->
     <div>
       <emui-Icon name="emui-add-blue-style1"></emui-Icon>
       <emui-Icon name="emui-add-blue-style2"></emui-Icon>
@@ -159,7 +158,31 @@
       <emui-Icon name="emui-arrow-bottom"></emui-Icon>
       <emui-Icon name="emui-arrow-left"></emui-Icon>
     </div>
-    <!--  -->
+
+    <div>
+      <emui-Link type="default"></emui-Link>
+      <emui-Link type="primary"></emui-Link>
+      <emui-Link type="success"></emui-Link>
+      <emui-Link type="warning"></emui-Link>
+      <emui-Link type="danger"></emui-Link>
+      <emui-Link type="info"></emui-Link>
+    </div>
+    <div>
+      <emui-Link type="default" disabled></emui-Link>
+      <emui-Link type="primary" disabled></emui-Link>
+      <emui-Link type="success" disabled></emui-Link>
+      <emui-Link type="warning" disabled></emui-Link>
+      <emui-Link type="danger" disabled></emui-Link>
+      <emui-Link type="info" disabled></emui-Link>
+    </div>
+    <div>
+      <emui-Link type="default" underline></emui-Link>
+      <emui-Link type="primary" underline></emui-Link>
+      <emui-Link type="success" underline></emui-Link>
+      <emui-Link type="warning" underline></emui-Link>
+      <emui-Link type="danger" underline></emui-Link>
+      <emui-Link type="info" underline></emui-Link>
+    </div>
   </div>
 </template>
 
