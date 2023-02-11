@@ -23,7 +23,7 @@ import emuiTag from "@/components/Tag/Tag1.vue"
 import emuiProgess from "@/components/progress/ProGress.vue"
 import "@/assets/iconfont/iconfont.css"
 import "./components/Icon/icon.js"
-
+import emuiLink from "./components/Link/link"
 
 
 Vue.config.productionTip = false
@@ -42,7 +42,7 @@ Vue.component(emuiNavItem.name, emuiNavItem)
 Vue.component(emuiNav.name, emuiNav)
 Vue.component(emuiSubNav.name, emuiSubNav)
 
-
+Vue.component(emuiLink.name, emuiLink)
 Vue.component(emuiIcon.name, emuiIcon)
 Vue.component(emuiTag.name, emuiTag)
 Vue.component(emuiProgess.name, emuiProgess)
