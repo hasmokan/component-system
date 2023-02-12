@@ -21,7 +21,7 @@
       <emui-nav-item name="hire">测试</emui-nav-item>
     </emui-nav>
 
-    <!-- <emui-nav
+    <emui-nav
       :selected.sync="selected"
       vertical
       style="width: 200px; margin: 20px 0 0 20px"
@@ -44,7 +44,7 @@
         </emui-sub-nav>
       </emui-sub-nav>
       <emui-nav-item name="hire">测试</emui-nav-item>
-    </emui-nav> -->
+    </emui-nav>
   </div>
 </template>
 
