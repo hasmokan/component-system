@@ -79,6 +79,7 @@ export default {
       el.style.height = "auto";
     },
     onClick() {
+      console.log(1);
       this.open = !this.open;
     },
     close() {
