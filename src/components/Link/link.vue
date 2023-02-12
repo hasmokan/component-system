@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: "emui-Link",
+  name: "emui-link",
   data() {
     return {
       link: this.href,
@@ -29,17 +29,8 @@ export default {
     type: {
       type: String,
       default: "default",
-      validator: function (value) {
-        return (
-          [
-            "default",
-            "primary",
-            "success",
-            "warning",
-            "danger",
-            "info",
-          ].indexOf(value) !== -1
-        );
+      validator: function () {
+        return ["default", "primary", "success", "warning", "danger", "info"];
       },
     },
     href: {

@@ -48,74 +48,74 @@
 
     <!--  -->
     <div>
-      <emui-Icon name="emui-add-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-add-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-add-red-style1"></emui-Icon>
-      <emui-Icon name="emui-add-red-style2"></emui-Icon>
-      <emui-Icon name="emui-address-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-address-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-address-red-style1"></emui-Icon>
-      <emui-Icon name="emui-address-red-style2"></emui-Icon>
+      <emui-icon name="emui-add-blue-style1"></emui-icon>
+      <emui-icon name="emui-add-blue-style2"></emui-icon>
+      <emui-icon name="emui-add-red-style1"></emui-icon>
+      <emui-icon name="emui-add-red-style2"></emui-icon>
+      <emui-icon name="emui-address-blue-style1"></emui-icon>
+      <emui-icon name="emui-address-blue-style2"></emui-icon>
+      <emui-icon name="emui-address-red-style1"></emui-icon>
+      <emui-icon name="emui-address-red-style2"></emui-icon>
     </div>
     <div>
-      <emui-Icon name="emui-custom-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-custom-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-custom-red-style1"></emui-Icon>
-      <emui-Icon name="emui-custom-red-style2"></emui-Icon>
-      <emui-Icon name="emui-delete-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-delete-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-delete-red-style1"></emui-Icon>
-      <emui-Icon name="emui-delete-red-style2"></emui-Icon>
+      <emui-icon name="emui-custom-blue-style1"></emui-icon>
+      <emui-icon name="emui-custom-blue-style2"></emui-icon>
+      <emui-icon name="emui-custom-red-style1"></emui-icon>
+      <emui-icon name="emui-custom-red-style2"></emui-icon>
+      <emui-icon name="emui-delete-blue-style1"></emui-icon>
+      <emui-icon name="emui-delete-blue-style2"></emui-icon>
+      <emui-icon name="emui-delete-red-style1"></emui-icon>
+      <emui-icon name="emui-delete-red-style2"></emui-icon>
     </div>
     <div>
-      <emui-Icon name="emui-home-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-home-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-home-red-style1"></emui-Icon>
-      <emui-Icon name="emui-home-red-style2"></emui-Icon>
-      <emui-Icon name="emui-info-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-info-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-info-red-style1"></emui-Icon>
-      <emui-Icon name="emui-info-red-style2"></emui-Icon>
+      <emui-icon name="emui-home-blue-style1"></emui-icon>
+      <emui-icon name="emui-home-blue-style2"></emui-icon>
+      <emui-icon name="emui-home-red-style1"></emui-icon>
+      <emui-icon name="emui-home-red-style2"></emui-icon>
+      <emui-icon name="emui-info-blue-style1"></emui-icon>
+      <emui-icon name="emui-info-blue-style2"></emui-icon>
+      <emui-icon name="emui-info-red-style1"></emui-icon>
+      <emui-icon name="emui-info-red-style2"></emui-icon>
     </div>
     <div>
-      <emui-Icon name="emui-message-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-message-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-message-red-style1"></emui-Icon>
-      <emui-Icon name="emui-message-red-style2"></emui-Icon>
-      <emui-Icon name="emui-refresh-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-refresh-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-refresh-red-style1"></emui-Icon>
-      <emui-Icon name="emui-refresh-red-style2"></emui-Icon>
+      <emui-icon name="emui-message-blue-style1"></emui-icon>
+      <emui-icon name="emui-message-blue-style2"></emui-icon>
+      <emui-icon name="emui-message-red-style1"></emui-icon>
+      <emui-icon name="emui-message-red-style2"></emui-icon>
+      <emui-icon name="emui-refresh-blue-style1"></emui-icon>
+      <emui-icon name="emui-refresh-blue-style2"></emui-icon>
+      <emui-icon name="emui-refresh-red-style1"></emui-icon>
+      <emui-icon name="emui-refresh-red-style2"></emui-icon>
     </div>
     <div>
-      <emui-Icon name="emui-return-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-return-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-return-red-style1"></emui-Icon>
-      <emui-Icon name="emui-return-red-style2"></emui-Icon>
-      <emui-Icon name="emui-search-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-search-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-search-red-style1"></emui-Icon>
-      <emui-Icon name="emui-search-red-style2"></emui-Icon>
+      <emui-icon name="emui-return-blue-style1"></emui-icon>
+      <emui-icon name="emui-return-blue-style2"></emui-icon>
+      <emui-icon name="emui-return-red-style1"></emui-icon>
+      <emui-icon name="emui-return-red-style2"></emui-icon>
+      <emui-icon name="emui-search-blue-style1"></emui-icon>
+      <emui-icon name="emui-search-blue-style2"></emui-icon>
+      <emui-icon name="emui-search-red-style1"></emui-icon>
+      <emui-icon name="emui-search-red-style2"></emui-icon>
     </div>
     <div>
-      <emui-Icon name="emui-seeting-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-seeting-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-seeting-red-style1"></emui-Icon>
-      <emui-Icon name="emui-seeting-red-style2"></emui-Icon>
-      <emui-Icon name="emui-share-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-share-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-share-red-style1"></emui-Icon>
-      <emui-Icon name="emui-share-red-style2"></emui-Icon>
+      <emui-icon name="emui-seeting-blue-style1"></emui-icon>
+      <emui-icon name="emui-seeting-blue-style2"></emui-icon>
+      <emui-icon name="emui-seeting-red-style1"></emui-icon>
+      <emui-icon name="emui-seeting-red-style2"></emui-icon>
+      <emui-icon name="emui-share-blue-style1"></emui-icon>
+      <emui-icon name="emui-share-blue-style2"></emui-icon>
+      <emui-icon name="emui-share-red-style1"></emui-icon>
+      <emui-icon name="emui-share-red-style2"></emui-icon>
     </div>
     <div>
-      <emui-Icon name="emui-star-blue-style1"></emui-Icon>
-      <emui-Icon name="emui-star-blue-style2"></emui-Icon>
-      <emui-Icon name="emui-star-red-style1"></emui-Icon>
-      <emui-Icon name="emui-star-red-style2"></emui-Icon>
-      <emui-Icon name="emui-arrow-top"></emui-Icon>
-      <emui-Icon name="emui-arrow-right"></emui-Icon>
-      <emui-Icon name="emui-arrow-bottom"></emui-Icon>
-      <emui-Icon name="emui-arrow-left"></emui-Icon>
+      <emui-icon name="emui-star-blue-style1"></emui-icon>
+      <emui-icon name="emui-star-blue-style2"></emui-icon>
+      <emui-icon name="emui-star-red-style1"></emui-icon>
+      <emui-icon name="emui-star-red-style2"></emui-icon>
+      <emui-icon name="emui-arrow-top"></emui-icon>
+      <emui-icon name="emui-arrow-right"></emui-icon>
+      <emui-icon name="emui-arrow-bottom"></emui-icon>
+      <emui-icon name="emui-arrow-left"></emui-icon>
     </div>
     <!--  -->
 
@@ -150,28 +150,28 @@
     <hr />
     <emui-progress :progress="progress" size="large"></emui-progress>
     <div>
-      <emui-Link type="default"></emui-Link>
-      <emui-Link type="primary"></emui-Link>
-      <emui-Link type="success"></emui-Link>
-      <emui-Link type="warning"></emui-Link>
-      <emui-Link type="danger"></emui-Link>
-      <emui-Link type="info"></emui-Link>
+      <emui-link type="default"></emui-link>
+      <emui-link type="primary"></emui-link>
+      <emui-link type="success"></emui-link>
+      <emui-link type="warning"></emui-link>
+      <emui-link type="danger"></emui-link>
+      <emui-link type="info"></emui-link>
     </div>
     <div>
-      <emui-Link type="default" disabled></emui-Link>
-      <emui-Link type="primary" disabled></emui-Link>
-      <emui-Link type="success" disabled></emui-Link>
-      <emui-Link type="warning" disabled></emui-Link>
-      <emui-Link type="danger" disabled></emui-Link>
-      <emui-Link type="info" disabled></emui-Link>
+      <emui-link type="default" disabled></emui-link>
+      <emui-link type="primary" disabled></emui-link>
+      <emui-link type="success" disabled></emui-link>
+      <emui-link type="warning" disabled></emui-link>
+      <emui-link type="danger" disabled></emui-link>
+      <emui-link type="info" disabled></emui-link>
     </div>
     <div>
-      <emui-Link type="default" underline></emui-Link>
-      <emui-Link type="primary" underline></emui-Link>
-      <emui-Link type="success" underline></emui-Link>
-      <emui-Link type="warning" underline></emui-Link>
-      <emui-Link type="danger" underline></emui-Link>
-      <emui-Link type="info" underline></emui-Link>
+      <emui-link type="default" underline></emui-link>
+      <emui-link type="primary" underline></emui-link>
+      <emui-link type="success" underline></emui-link>
+      <emui-link type="warning" underline></emui-link>
+      <emui-link type="danger" underline></emui-link>
+      <emui-link type="info" underline></emui-link>
     </div>
   </div>
 </template>
