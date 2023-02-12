@@ -3,7 +3,7 @@
     <span class="emui-sub-nav-label" @click="onClick">
       <slot name="title"></slot>
       <span class="emui-sub-nav-icon" :class="{ open }">
-        <!-- <g-icon name="right"></g-icon> -->
+        <emui-Icon name="emui-arrow-right"></emui-Icon>
       </span>
     </span>
     <template v-if="vertical">
@@ -130,7 +130,7 @@ export default {
     left: 0;
     margin-top: 4px;
     white-space: nowrap;
-    box-shadow: 0 0 3px x_out(black, 0.8);
+    box-shadow: 0 0 3px fade_out(black, 0.8);
     border-radius: $border-radius;
     font-size: $font-size;
     color: $light-color;
