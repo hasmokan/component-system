@@ -3,7 +3,7 @@
     <span class="emui-sub-nav-label" @click="onClick">
       <slot name="title"></slot>
       <span class="emui-sub-nav-icon" :class="{ open }">
-        <emui-Icon name="emui-arrow-right"></emui-Icon>
+        <!-- <emui-Icon name="emui-arrow-right"></emui-Icon> -->
       </span>
     </span>
     <template v-if="vertical">
