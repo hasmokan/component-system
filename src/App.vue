@@ -58,7 +58,7 @@ export default {
       button: "",
       visiable: false,
       visiable1: false,
-      selected: ["culture"],
+      selected: ["about"],
     };
   },
 };
