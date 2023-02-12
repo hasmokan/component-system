@@ -12,14 +12,8 @@
 .emui-link.disabled {
     opacity: 0.5;
     cursor: not-allowed;
-    &:hover {
-        cursor: not-allowed;
-    }
 }
-span{
-    pointer-events: none;
-        cursor: not-allowed;
-}
+
 .emui-link--default {
     color: $font-gold-color;
 
