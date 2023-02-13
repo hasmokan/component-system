@@ -4,6 +4,9 @@ module.exports = {
     description: 'VuePress搭建组件库文档教程示例代码',
     base: '/',
     port: '8080',
+    chainWebpack: config => {
+    	config.resolve.alias.set('core-js/library/fn', 'core-js/features')
+    },
     themeConfig: {
         nav: [
             {
@@ -17,8 +20,14 @@ module.exports = {
         ],
         sidebar: {
             '/comps/': [
-                '/comps/',
-                '/comps/select.md'
+                {
+                    title:'基础组件',
+                    collapsable: false,
+                    children:[
+                        'basic/button',
+                        'basic/input'
+                    ]
+                }
             ]
         }
     },

@@ -35,8 +35,8 @@
 </template>
 
 <script>
-import { check } from "@/utils/checkone";
-import Emitter from "@/mixins/emitter";
+import { check } from "../../utils/checkone";
+import Emitter from "../../mixins/emitter";
 export default {
   name: "emui-input",
   data() {
@@ -129,6 +129,3 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import "@/styles/input";
-</style>

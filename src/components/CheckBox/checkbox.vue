@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Emitter from "@/mixins/emitter";
+import Emitter from "../../mixins/emitter";
 export default {
   name: "emui-checkbox",
   data() {
@@ -96,9 +96,3 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import "@/styles/checkbox";
-.checkbox {
-  margin: 0;
-}
-</style>
