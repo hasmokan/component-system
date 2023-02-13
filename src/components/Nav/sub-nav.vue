@@ -8,8 +8,8 @@
       <slot name="title"></slot>
       <span class="emui-sub-nav-icon" :class="{ open, vertical }">
         <emui-icon
-          width="15px"
-          height="15px"
+          width="16px"
+          height="16px"
           name="emui-arrow-left"
         ></emui-icon>
       </span>
@@ -105,6 +105,8 @@ export default {
 </script>
 <style lang="scss">
 @import "@/styles/nav.scss";
+@import "@/styles/common/scss/color";
+@import "@/styles/navcommon";
 .x-enter-active,
 .x-leave-active {
 }
@@ -113,6 +115,8 @@ export default {
 }
 
 .emui-sub-nav {
+  color: $font-gold-color;
+  font-family: "jiangxizhuokai";
   position: relative;
   &:not(.vertical) {
     &.active {
@@ -135,7 +139,7 @@ export default {
     display: none;
   }
   &-popover {
-    background: white;
+    background: $primary-color;
     position: absolute;
     top: 100%;
     left: 0;
@@ -166,7 +170,7 @@ export default {
   .emui-sub-nav-popover {
     top: 0;
     left: 100%;
-    margin-left: 8px;
+    margin-left: 4px;
   }
   .emui-sub-nav-label {
     display: flex;
@@ -178,7 +182,7 @@ export default {
     display: inline-flex;
     margin-left: 1em;
     svg {
-      fill: $light-color;
+      fill: $primary-color;
     }
     &.vertical {
       transform: rotate(90deg);

@@ -34,7 +34,10 @@ export default {
 <style lang="scss">
 @import "@/styles/nav";
 @import "@/styles/common/scss/color";
+@import "@/styles/navcommon";
 .emui-nav-item {
+  color: $font-gold-color;
+  font-family: "jiangxizhuokai";
   padding: 10px 20px;
   position: relative;
   &:not(.vertical) {

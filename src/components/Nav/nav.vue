@@ -90,7 +90,10 @@ export default {
 
 <style lang="scss">
 @import "@/styles/nav";
+@import "@/styles/common/scss/color";
+@import "@/styles/navcommon";
 .emui-nav {
+  background: $primary-color;
   display: flex;
   border-bottom: 1px solid $grey;
   color: $color;
