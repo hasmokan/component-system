@@ -1,9 +1,17 @@
 <template>
-  <div class="emui-sub-nav" :class="{ active }" v-click-outside="close">
+  <div
+    class="emui-sub-nav"
+    :class="{ active, vertical }"
+    v-click-outside="close"
+  >
     <span class="emui-sub-nav-label" @click="onClick">
       <slot name="title"></slot>
-      <span class="emui-sub-nav-icon" :class="{ open }">
-        <!-- <g-icon name="right"></g-icon> -->
+      <span class="emui-sub-nav-icon" :class="{ open, vertical }">
+        <emui-icon
+          width="16px"
+          height="16px"
+          name="emui-arrow-left"
+        ></emui-icon>
       </span>
     </span>
     <template v-if="vertical">
@@ -97,6 +105,8 @@ export default {
 </script>
 <style lang="scss">
 @import "@/styles/nav.scss";
+@import "@/styles/common/scss/color";
+@import "@/styles/navcommon";
 .x-enter-active,
 .x-leave-active {
 }
@@ -105,17 +115,22 @@ export default {
 }
 
 .emui-sub-nav {
+  color: $font-gold-color;
+  font-family: "jiangxizhuokai";
   position: relative;
-  &.active {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      border-bottom: 2px solid $blue;
-      width: 100%;
+  &:not(.vertical) {
+    &.active {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-bottom: 2px solid $blue;
+        width: 100%;
+      }
     }
   }
+
   &-label {
     padding: 10px 20px;
     display: block;
@@ -124,13 +139,13 @@ export default {
     display: none;
   }
   &-popover {
-    background: white;
+    background: $primary-color;
     position: absolute;
     top: 100%;
     left: 0;
     margin-top: 4px;
     white-space: nowrap;
-    box-shadow: 0 0 3px x_out(black, 0.8);
+    box-shadow: 0 0 3px fade_out(black, 0.8);
     border-radius: $border-radius;
     font-size: $font-size;
     color: $light-color;
@@ -138,7 +153,6 @@ export default {
     min-width: 8em;
     &.vertical {
       //满足vertical时
-
       position: static;
       border-radius: 0;
       border: none;
@@ -156,7 +170,7 @@ export default {
   .emui-sub-nav-popover {
     top: 0;
     left: 100%;
-    margin-left: 8px;
+    margin-left: 4px;
   }
   .emui-sub-nav-label {
     display: flex;
@@ -168,9 +182,16 @@ export default {
     display: inline-flex;
     margin-left: 1em;
     svg {
-      fill: $light-color;
+      fill: $primary-color;
     }
-    &.x {
+    &.vertical {
+      transform: rotate(90deg);
+      &.open {
+        transform: rotate(270deg);
+      }
+    }
+
+    &.open {
       transform: rotate(180deg);
     }
   }
