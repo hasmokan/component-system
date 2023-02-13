@@ -1,10 +1,8 @@
 <template>
   <div :class="['emui-icon', 'emui-icon']">
-    <div>
-      <svg :style="{ width, height }">
-        <image :xlink:href="className" :style="{ width, height }" />
-      </svg>
-    </div>
+    <svg :style="{ width, height }">
+      <image :xlink:href="className" :style="{ width, height }" />
+    </svg>
   </div>
 </template>
 
