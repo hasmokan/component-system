@@ -1,5 +1,5 @@
 <template>
-  <div :class="['emui-icon', 'emui-icon']">
+  <div :class="['emui-icon', 'emui-icon']" :style="{ width, height }">
     <svg :style="{ width, height }">
       <image :xlink:href="className" :style="{ width, height }" />
     </svg>
@@ -44,6 +44,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/styles/icon.scss";
 </style>

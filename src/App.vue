@@ -21,10 +21,10 @@
       <emui-nav-item name="hire">测试</emui-nav-item>
     </emui-nav>
 
-    <!-- <emui-nav
+    <emui-nav
       :selected.sync="selected"
       vertical
-      style="width: 200px; margin: 20px 0 0 20px"
+      style="width: 200px; margin: 20px 0 0 20px; margin-top: 200px"
     >
       <emui-nav-item name="home">首页</emui-nav-item>
       <emui-sub-nav name="about">
@@ -44,10 +44,9 @@
         </emui-sub-nav>
       </emui-sub-nav>
       <emui-nav-item name="hire">测试</emui-nav-item>
-    </emui-nav> -->
+    </emui-nav>
 
-    <!--  -->
-    <div>
+    <!-- <div>
       <emui-icon name="emui-add-blue-style1"></emui-icon>
       <emui-icon name="emui-add-blue-style2"></emui-icon>
       <emui-icon name="emui-add-red-style1"></emui-icon>
@@ -116,63 +115,7 @@
       <emui-icon name="emui-arrow-right"></emui-icon>
       <emui-icon name="emui-arrow-bottom"></emui-icon>
       <emui-icon name="emui-arrow-left"></emui-icon>
-    </div>
-    <!--  -->
-
-    <emui-Button type="primarywhite" @click="messageOpenMeth('info')"
-      >info的Message提示</emui-Button
-    >
-    <emui-Button type="successwhite" @click="messageOpenMeth('success')"
-      >success的Message提示</emui-Button
-    >
-    <emui-Button type="warning" @click="messageOpenMeth('warning')"
-      >warning的Message提示</emui-Button
-    >
-    <emui-Button type="dangerwhite" @click="messageOpenMeth('error')"
-      >error的Message提示</emui-Button
-    >
-    <emui-tag :size="size"> 4444 </emui-tag>&nbsp;&nbsp;&nbsp;&nbsp;
-    <emui-tag :size="size" closable="true"> 4444 </emui-tag
-    >&nbsp;&nbsp;&nbsp;&nbsp;
-    <emui-tag :size="size" closable="true" hit="true"> 4444 </emui-tag>
-    <hr />
-    <emui-tag
-      :size="size"
-      closable="true"
-      hit="true"
-      :type="type"
-      effect="dark"
-    >
-      4444
-    </emui-tag>
-    <hr />
-    <emui-progress :progress="progress"></emui-progress>
-    <hr />
-    <emui-progress :progress="progress" size="large"></emui-progress>
-    <div>
-      <emui-link type="default"></emui-link>
-      <emui-link type="primary"></emui-link>
-      <emui-link type="success"></emui-link>
-      <emui-link type="warning"></emui-link>
-      <emui-link type="danger"></emui-link>
-      <emui-link type="info"></emui-link>
-    </div>
-    <div>
-      <emui-link type="default" disabled></emui-link>
-      <emui-link type="primary" disabled></emui-link>
-      <emui-link type="success" disabled></emui-link>
-      <emui-link type="warning" disabled></emui-link>
-      <emui-link type="danger" disabled></emui-link>
-      <emui-link type="info" disabled></emui-link>
-    </div>
-    <div>
-      <emui-link type="default" underline></emui-link>
-      <emui-link type="primary" underline></emui-link>
-      <emui-link type="success" underline></emui-link>
-      <emui-link type="warning" underline></emui-link>
-      <emui-link type="danger" underline></emui-link>
-      <emui-link type="info" underline></emui-link>
-    </div>
+    </div> -->
   </div>
 </template>
 
