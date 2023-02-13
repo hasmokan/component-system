@@ -46,8 +46,7 @@
       <emui-nav-item name="hire">测试</emui-nav-item>
     </emui-nav> -->
 
-    <!--  -->
-    <div>
+    <!-- <div>
       <emui-icon name="emui-add-blue-style1"></emui-icon>
       <emui-icon name="emui-add-blue-style2"></emui-icon>
       <emui-icon name="emui-add-red-style1"></emui-icon>
@@ -116,8 +115,7 @@
       <emui-icon name="emui-arrow-right"></emui-icon>
       <emui-icon name="emui-arrow-bottom"></emui-icon>
       <emui-icon name="emui-arrow-left"></emui-icon>
-    </div>
-    <!--  -->
+    </div> -->
 
     <emui-Button type="primarywhite" @click="messageOpenMeth('info')"
       >info的Message提示</emui-Button
