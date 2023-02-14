@@ -30,18 +30,18 @@ export default {
       type: String,
       default: "default",
       // type值校验
-      validator: function (value) {
-        return (
-          [
-            "default",
-            "success",
-            "primary",
-            "danger",
-            "warning",
-            "info",
-          ].indexOf(value) !== -1
-        );
-      },
+      // validator: function (value) {
+      //   return (
+      //     [
+      //       "default",
+      //       "success",
+      //       "primary",
+      //       "danger",
+      //       "warning",
+      //       "info",
+      //     ].indexOf(value) !== -1
+      //   );
+      // },
     },
     // 朴素按钮
     plain: {

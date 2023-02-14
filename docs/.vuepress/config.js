@@ -7,7 +7,26 @@ module.exports = {
     chainWebpack: config => {
     	config.resolve.alias.set('core-js/library/fn', 'core-js/features')
     },
+    markdown: {
+        lineNumbers: true
+      },
+    plugins: {
+       'demo-container':{
+        locales:[
+            {
+                "lang": "zh-CN",
+                "demo-block": {
+                  "hide-text": "隐藏代码",
+                  "show-text": "显示代码",
+                  "copy-text": "复制代码",
+                  "copy-success": "复制成功"
+                }
+              },
+        ]
+       }
+    },
     themeConfig: {
+        sidebarDepth:1,
         nav: [
             {
                 text: '首页',
@@ -21,12 +40,20 @@ module.exports = {
         sidebar: {
             '/comps/': [
                 {
-                    title:'基础组件',
+                    title:'Form表单',
                     collapsable: false,
                     children:[
-                        'basic/button',
-                        'basic/input'
+                        'form/form',
+                        'form/input',
+                        'form/radio',
+                        'form/checkbox',
+                        'form/select'
                     ]
+                },
+                {
+                    title:'Table表格',
+                    collapsable:false,
+                    children:['table/table']
                 }
             ]
         }

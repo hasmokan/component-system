@@ -3,7 +3,7 @@
     <div
       :style="{ height:height+'px', overflow: 'auto' }"
       ref="tableWrapper"
-      class="table-wrapper"
+      class="tableWrapper"
     >
       <table
         class="emui-table"
@@ -151,19 +151,19 @@ export default {
     return {
       table2: "",
       expendIds:[],  //存放可展开元素的id
+      tableHeader2:''
     };
   },
   mounted() {
     //将页面原有的table复制一份
     let table2 = this.$refs.table.cloneNode(false);
     table2.classList.add("emui-table-copy");
+    this.table2=table2;
+    this.$refs.wrapper.appendChild(table2)
     let tHead = this.$refs.table.children[0];
     const { height } = tHead.getBoundingClientRect();
-    this.$refs.table.style.marginTop = height + "px";
-    table2.appendChild(tHead);
-    this.table2 = table2;
+    this.$refs.table.style.marginTop=height+'px';
     this.updateHeadersWidth();
-    this.$refs.wrapper.appendChild(table2);
     this.onWindowResize = () => this.updateHeadersWidth();
     window.addEventListener("resize", this.onWindowResize); //监听页面宽度发生变化，随时调整tableheader宽度
   },
@@ -202,10 +202,18 @@ export default {
   },
   methods: {
     updateHeadersWidth() {
-      const { width } = this.$refs.table.getBoundingClientRect();
-      this.table2.style.width = width + "px";
+     const { width } = this.$refs.table.getBoundingClientRect();
+     this.table2.style.width = width + "px";
+     let table2=this.table2
+     let tableHeader=Array.from(this.$refs.table.children).filter(node=>node.tagName.toLowerCase()=='thead')[0]
+     let tableBody=Array.from(this.$refs.table.children).filter(node=>node.tagName.toLowerCase()=='tbody')[0]
+     table2.appendChild(tableHeader)
+      Array.from(tableBody.children[0].children).map((th,i)=>{
+        const {width}=th.getBoundingClientRect();
+        table2.children[0].children[0].children[i].style.width=width+'px';
+      })
     },
-    onChangeItem(e, item) {
+     onChangeItem(e, item) {
       let selected = e.target.checked;
       let copy = JSON.parse(JSON.stringify(this.selectedItems));
       if (selected) {
@@ -245,10 +253,7 @@ export default {
     inExpendIds(id){
       return this.expendIds.indexOf(id)>=0
     }
-  },
-};
+    },
+  }
 </script>
 
-<style scoped lang="scss">
-@import "@/styles/table.scss";
-</style>

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Emitter from "@/mixins/emitter"
+import Emitter from "../../mixins/emitter"
 export default {
   name: "emui-radio-button",
   data(){
@@ -47,8 +47,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/common/scss/color";
-@import "@/styles/common/scss/font";
+@import "../../styles/common/scss/color";
 .emui-radio {
   display: inline-block;
   margin-right: 10px;

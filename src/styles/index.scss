@@ -1,6 +1,11 @@
 @import "./button";
 @import "./input";
 @import "./checkbox";
+@import "./common/scss/color.scss";
+@import "./common/scss/animation.scss";
+@import "./radio";
+@import "./select";
+@import "./table";
 @font-face {
     font-family: jiangxizhuokai;
     src: url("../assets/font/江西拙楷.ttf");

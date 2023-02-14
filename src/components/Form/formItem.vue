@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Emitter from "@/mixins/emitter";
+import Emitter from "../../mixins/emitter";
 import AsyncValidator from "async-validator";
 export default {
   name: "emui-form-item",

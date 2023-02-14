@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/common/scss/color";
+@import "../../styles/common/scss/color";
 .option {
   cursor: pointer;
   &:hover {

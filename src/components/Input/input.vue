@@ -19,6 +19,7 @@
       ref="input"
     />
     <span
+     v-show="type=='password'"
       class="iconfont eyes"
       :class="{
         'icon-yanjing_yincang': isHide,
@@ -44,7 +45,7 @@ export default {
       currentValue: this.value,
       currentType:this.type,
       isShow:false,
-
+      isHide:true
     };
   },
   mixins:[Emitter],
@@ -61,9 +62,6 @@ export default {
         [`${prefix}__type-${this.type}`]: true,
         [`${prefix}__disabled-${this.disabled}`]: true,
       };
-    },
-    isHide() {
-      return this.type == "password";
     },
     isClear() {
       return this.type == "clearable";
