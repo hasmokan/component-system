@@ -1,12 +1,12 @@
 <template>
-  <div class="emui-nav-item" :class="{ selected }" @click="onClick">
+  <div class="emui-nav-item" :class="{ selected, vertical }" @click="onClick">
     <slot></slot>
   </div>
 </template>
 <script>
 export default {
   name: "emui-nav-item",
-  inject: ["root"], //root是导航栏
+  inject: ["root", "vertical"], //root是导航栏
   props: {
     name: {
       type: String,
@@ -34,25 +34,88 @@ export default {
 <style lang="scss">
 @import "@/styles/nav";
 @import "@/styles/common/scss/color";
+@import "@/styles/navcommon";
 .emui-nav-item {
+  box-sizing: content-box;
+  color: $font-gold-color;
+  font-family: "jiangxizhuokai";
   padding: 10px 20px;
   position: relative;
-  &.selected {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
+  &:not(.vertical) {
+    &.selected {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 3px solid $font-gold-color;
+        color: #8d5940;
+      }
+    }
 
-      left: 0;
-      border-bottom: 2px solid $blue;
-      width: 100%;
+    &:hover {
+      box-sizing: border-box;
+      background: #38767b;
+      transition: 0.2s;
+      &:not(.selected) {
+        // border-bottom: 3px solid $font-gold-color;
+        background: #38767b;
+        transition: 0.2s;
+      }
+    }
+    &.selected {
+      color: #8d5940; //选中的文字的颜色
+    }
+  }
+  // &:not(.vertical):hover {
+  //   border-bottom: 0px solid $font-gold-color;
+  //   transition: 15s;
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     bottom: 0;
+  //     left: 0;
+  //     border-bottom: 3px solid $font-gold-color;
+  //     width: 100%;
+  //   }
+  // }
+  // 垂直的时候
+  &.vertical {
+    &.selected {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        border-left: 5px solid $font-gold-color;
+      }
+    }
+    &:hover {
+      background: #38767b;
+      transition: 0.2s;
+      &:not(.selected) {
+        border-left: 5px solid $font-gold-color;
+        background: #38767b;
+        transition: 0.2s;
+      }
+    }
+    &.selected {
+      color: #8d5940; //选中的文字的颜色
     }
   }
 }
-.emui-sub-nav .emui-nav-item {
+a {
+  //链接的css
+  color: inherit;
+  text-decoration: none;
+}
+
+.emui-sub-nav .emui-nav-item:not(.vertical) {
   &.selected {
     color: $color;
-    background: grey;
+    background: $normal-active-color 0.5; //
     &::after {
       display: none;
     }

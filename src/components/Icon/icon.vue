@@ -1,18 +1,15 @@
 <template>
-  <div :class="['emui-icon', 'emui-icon']">
-    <div>
-      <svg :style="{ width, height }">
-        <image :xlink:href="className" :style="{ width, height }" />
-      </svg>
-      <h1>{{ name }}</h1>
-    </div>
+  <div :class="['emui-icon', 'emui-icon']" :style="{ width, height }">
+    <svg :style="{ width, height }">
+      <image :xlink:href="className" :style="{ width, height }" />
+    </svg>
   </div>
 </template>
 
 <script>
 import icon from "../Icon/icon";
 export default {
-  name: "emui-Icon",
+  name: "emui-icon",
   data() {
     return {
       icon,
@@ -47,6 +44,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/styles/icon.scss";
 </style>

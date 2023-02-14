@@ -1,0 +1,93 @@
+//@import url(); 引入公共scss类
+@import "./common/scss/color.scss";
+//引入江西拙楷字体
+@import "./common/scss/font.scss";
+
+.emui-link {
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.emui-link.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.emui-link--default {
+    color: $font-gold-color;
+
+    &:hover,
+    &:focus {
+        color: $normal-active-color;
+    }
+}
+
+.emui-link--default.underline {
+    border-bottom: 1px solid $font-gold-color;
+}
+
+.emui-link--primary {
+    color: $primary-color ;
+
+    &:hover,
+    &:focus {
+        color: $primary-active-color ;
+    }
+}
+
+.emui-link--primary.underline {
+    border-bottom: 1px solid $primary-color;
+}
+
+.emui-link--success {
+    color: $success-color ;
+
+    &:hover,
+    &:focus {
+        color: $success-active-color ;
+    }
+}
+
+.emui-link--success.underline {
+    border-bottom: 1px solid $success-color ;
+}
+
+.emui-link--warning {
+    color: $warning-color;
+
+    &:hover,
+    &:focus {
+        color: $warning-active-color;
+    }
+}
+
+.emui-link--warning.underline {
+    border-bottom: 1px solid $warning-color;
+}
+
+.emui-link--danger {
+    color: $danger-color;
+
+    &:hover,
+    &:focus {
+        color: $danger-active-color ;
+    }
+}
+
+.emui-link--danger.underline {
+    border-bottom: 1px solid $danger-color;
+}
+
+.emui-link--info {
+    color: $info-color;
+
+    &:hover,
+    &:focus {
+        color: $info-active-color ;
+    }
+}
+
+.emui-link--info.underline {
+    border-bottom: 1px solid $info-color;
+}
