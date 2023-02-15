@@ -193,8 +193,7 @@
       <emui-Icon name="emui-arrow-right"></emui-Icon>
       <emui-Icon name="emui-arrow-bottom"></emui-Icon>
       <emui-Icon name="emui-arrow-left"></emui-Icon>
-    </div>
-    <!--  -->
+    </div>-->
     <!-- <emui-nav
       :selected.sync="selected"
       vertical
@@ -313,12 +312,12 @@ export default {
       type: "warning",
       progress: 40,
       columns: [
-        { text: "姓名", filed: "name" ,width:"230"},
-        { text: "分数", filed: "score" ,width:"230"},
+        { text: "姓名", filed: "name", width: "230" },
+        { text: "分数", filed: "score", width: "230" },
       ],
       dataSource: [
-        { id: 1, name: "lili", score: 100 ,description:'score is ok'},
-        { id: 2, name: "bobo", score: 100 ,description:'score is ok'},
+        { id: 1, name: "lili", score: 100, description: "score is ok" },
+        { id: 2, name: "bobo", score: 100, description: "score is ok" },
         { id: 3, name: "siry", score: 100 },
         { id: 4, name: "laoliu", score: 100 },
         { id: 5, name: "laoliu", score: 100 },
@@ -353,7 +352,7 @@ export default {
       // let {selected,index,item}=info;
       console.log(info);
     },
-     messageOpenMeth(type) {
+    messageOpenMeth(type) {
       this.$notice.open({
         title: "这是一条提示文字",
         center: true,
@@ -366,5 +365,4 @@ export default {
 
 
 <style scoped lang="scss">
-
 </style>;
