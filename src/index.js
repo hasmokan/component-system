@@ -15,8 +15,8 @@ import navItem from './components/Nav/nav-item'
 import subNav from './components/Nav/sub-nav'
 import dialog from './components/dialog/dialog'
 import Button from "./components/Button"
-import em from './components/icon'
-
+import icon from './components/icon'
+import link from './components/Link/link.js'
 import "./assets/iconfont/iconfont.css"
 
 Vue.config.productionTip = false
@@ -27,8 +27,8 @@ const components = {
   'emui-dialog': dialog,
   'emui-button': Button,
   'emui-switch': Switch,
-  'emui-icon': em,
-
+  'emui-icon': icon,
+  'emui-link': link,
 
   'emui-input': Input,
   'emui-checkbox': checkbox,

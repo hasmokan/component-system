@@ -1,15 +1,7 @@
-//@import url(); 引入公共scss类
-@import "./common/scss/color.scss";
-//引入江西拙楷字体
-@import "./common/scss/font.scss";
+// @charset "UTF-8";
 
 .emui-icon {
     display: inline-block;
     overflow: visible;
     font-size: 3px;
-}
-
-h1 {
-    width: 90px;
-    text-align: center;
 }

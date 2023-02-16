@@ -45,7 +45,9 @@ module.exports = {
                     children: [
                         'basic/button',
                         'basic/dialog',
-                        'basic/switch'
+                        'basic/switch',
+                        'basic/link',
+                        'basic/icon'
                     ]
                 },
                 {
