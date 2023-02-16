@@ -25,9 +25,6 @@ module.exports = {
             ]
         }
     },
-    plugins: [
-        'demo-container'
-    ],
     themeConfig: {
         sidebarDepth: 1,
         nav: [
@@ -41,7 +38,7 @@ module.exports = {
             },
             {
                 text: '组件',
-                link: '/comps/form'
+                link: '/comps/basic/button'
             }
         ],
         sidebar: {

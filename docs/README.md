@@ -3,7 +3,7 @@ home: true
 heroImage: /image/logo.png
 heroText: Emui
 actionText: 快速上手 →
-actionLink: /comps/
+actionLink: /comps/basic/button
 features:
   - title: 中国风 Chinoiserie
     details: 由e码当先为您精心打造的中国风组件库

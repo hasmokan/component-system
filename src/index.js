@@ -7,8 +7,6 @@ import form from "./components/Form"
 import radio from "./components/Radio"
 import select from "./components/select"
 import table from "./components/table";
-
-
 import Switch from "./components/switch"
 import nav from './components/Nav/nav'
 import navItem from './components/Nav/nav-item'
@@ -18,6 +16,7 @@ import Button from "./components/Button"
 import icon from './components/icon'
 import link from './components/Link/link.js'
 import "./assets/iconfont/iconfont.css"
+import tag from './components/Tag'
 
 Vue.config.productionTip = false
 const components = {
@@ -39,7 +38,9 @@ const components = {
   'emui-radio-group': radio.item,
   'emui-select': select,
   'emui-option': select.item,
-  'emui-table': table
+  'emui-table': table,
+  'emui-tag':tag,
+  'emui-tag-list':tag.group
 }
 
 
