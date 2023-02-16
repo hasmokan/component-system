@@ -42,11 +42,11 @@ module.exports = (_module$exports = {
       '/comps/': [{
         title: 'Basic基础组件',
         collapsable: false,
-        children: ['basic/button', 'basic/dialog']
+        children: ['basic/button', 'basic/dialog', 'basic/switch']
       }, {
         title: 'Navigation导航',
         collapsable: false,
-        children: ['navigation/nav', 'navigation/subnav']
+        children: ['navigation/nav', 'navigation/subnav', 'navigation/navItem']
       }, {
         title: 'Form表单',
         collapsable: false,

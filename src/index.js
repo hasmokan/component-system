@@ -15,7 +15,7 @@ import navItem from './components/Nav/nav-item'
 import subNav from './components/Nav/sub-nav'
 import dialog from './components/dialog/dialog'
 import Button from "./components/Button"
-
+import em from './components/icon'
 
 import "./assets/iconfont/iconfont.css"
 
@@ -27,6 +27,8 @@ const components = {
   'emui-dialog': dialog,
   'emui-button': Button,
   'emui-switch': Switch,
+  'emui-icon': em,
+
 
   'emui-input': Input,
   'emui-checkbox': checkbox,

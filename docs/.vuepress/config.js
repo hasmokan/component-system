@@ -44,7 +44,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'basic/button',
-                        'basic/dialog'
+                        'basic/dialog',
+                        'basic/switch'
                     ]
                 },
                 {
@@ -52,7 +53,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'navigation/nav',
-                        'navigation/subnav'
+                        'navigation/subnav',
+                        'navigation/navItem',
                     ]
                 },
                 {

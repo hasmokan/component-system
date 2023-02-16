@@ -1,90 +1,78 @@
 <template>
   <div
-    :class="[
-      'emui-switch',
-      value ? 'is-checked' : '',
-      disabled ? 'is-disabled' : '',
-      mimicry ? 'is-mimicry' : '',
-    ]"
-    :aria-checked="value"
+    class="emui-switch"
+    :class="{ 'is-checked': value }"
     @click="handleClick"
   >
-    <span
-      class="emui-switch__core"
-      ref="core"
-      :style="{
-        'border-color': value ? activeColor : inactiveColor,
-        'background-color': value ? activeColor : inactiveColor,
-      }"
-    ></span>
-    <!-- 用来接收name -->
-    <input type="checkbox" class="emui-switch__input" :name="name" />
+    <span class="emui-switch_core" ref="core">
+      <span class="emui-switch_button"></span>
+    </span>
+    <input type="checkbox" class="emui-switch_input" :name="name" ref="input" />
   </div>
 </template>
-
 <script>
 export default {
   name: "emuiSwitch",
+  components: {},
+  props: {
+    value: {
+      type: Boolean,
+      defualt: false,
+    },
+    activeColor: {
+      type: String,
+      defualt: "",
+    },
+    inactiveColor: {
+      type: String,
+      defualt: "",
+    },
+    name: {
+      type: String,
+      defualt: "",
+    },
+  },
+  mounted() {
+    // 修改开关颜色
+    if (this.activeColor || this.inactiveColor) {
+      var color = !this.value ? this.activeColor : this.inactiveColor;
+      this.$refs.core.style.borderColor = color;
+      this.$refs.core.style.backgroundColor = color;
+    }
+    // 控制checkbox的值,input值同步value值
+    this.$refs.input.checked = this.value;
+  },
+  watch: {
+    value(e) {
+      // 修改开关颜色
+      if (this.activeColor || this.inactiveColor) {
+        var color = !e ? this.activeColor : this.inactiveColor;
+        this.$refs.core.style.borderColor = color;
+        this.$refs.core.style.backgroundColor = color;
+      }
+    },
+  },
   data() {
     return {};
   },
   methods: {
     handleClick() {
-      if (!this.disabled) {
-        this.$emit("input", !this.value);
-        this.$emit("change", !this.value);
-      }
+      this.$emit("input", !this.value);
+      // 控制checkbox的值,input值同步value值
+      this.$refs.input.checked = this.value;
     },
   },
-  components: {},
-  props: {
-    value: {
-      type: Boolean,
-      default: false,
-    },
-    activeColor: {
-      type: String,
-      default: "#dcdfe6",
-    },
-    inactiveColor: {
-      default: "#dcdfe6",
-    },
-    name: {
-      type: String,
-      default: "",
-    },
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
-    mimicry: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  created() {},
-  mounted() {},
-  computed: {},
-  watched: {},
 };
 </script>
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .emui-switch {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   position: relative;
   font-size: 14px;
   line-height: 20px;
-  height: 20px;
   vertical-align: middle;
-  .emui-switch__input {
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    margin: 0;
-  }
-  .emui-switch__core {
+  .emui-switch_core {
     margin: 0;
     display: inline-block;
     position: relative;
@@ -98,31 +86,34 @@ export default {
     cursor: pointer;
     transition: border-color 0.3s, background-color 0.3s;
     vertical-align: middle;
+    .emui-switch_button {
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      border-radius: 100%;
+      transition: all 0.3s;
+      width: 16px;
+      height: 16px;
+      background-color: #f8e8db;
+    }
   }
-  .emui-switch__core:after {
-    content: "";
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    border-radius: 100%;
-    transition: all 0.3s;
-    width: 16px;
-    height: 16px;
-    background-color: #fff;
+}
+// 选中样式
+.is-checked {
+  .emui-switch_core {
+    border-color: #e3c60b;
+    background-color: #40878d;
+    .emui-switch_button {
+      transform: translateX(20px);
+    }
   }
-  &.is-checked .emui-switch__core::after {
-    left: 100%;
-    margin-left: -17px;
-  }
-  &.is-disabled .emui-switch__core {
-    cursor: not-allowed;
-  }
-  &.is-mimicry .emui-switch__core {
-    box-shadow: inset 4px 2px 6px #cacaca48,
-      inset -4px -2px 6px rgba(255, 255, 255, 0.247);
-  }
-  &.is-mimicry .emui-switch__core::after {
-    box-shadow: inset 2px 1px 3px #d9d9d9, inset -2px -1px 3px #ffffff;
-  }
+}
+// 隐藏input标签
+.emui-switch_input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  margin: 0;
 }
 </style>
