@@ -6,6 +6,14 @@
 @import "./radio";
 @import "./select";
 @import "./table";
+
+@import './nav.scss';
+@import './totalnav.scss';
+@import './subnav.scss';
+@import './navitem.scss';
+@import './dialog.scss';
+
+
 @font-face {
     font-family: jiangxizhuokai;
     src: url("../assets/font/江西拙楷.ttf");
