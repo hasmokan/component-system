@@ -33,8 +33,8 @@ module.exports = {
                 link: '/'
             },
             {
-                text:'指南',
-                link:'/guide/introduction'
+                text: '指南',
+                link: '/guide/introduction'
             },
             {
                 text: '组件',
@@ -81,7 +81,7 @@ module.exports = {
                     children: ['table/table']
                 }
             ],
-            '/guide/':[
+            '/guide/': [
                 {
                     title: '开发指南',
                     collapsable: false,
@@ -94,4 +94,6 @@ module.exports = {
         }
     },
     head: [],
+    plugins: ['demo-container'],
+    markdown: {}
 }

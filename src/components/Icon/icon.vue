@@ -20,7 +20,7 @@ export default {
       for (let i = 0; i < icon.length; i++) {
         if (icon[i].class.name == this.name) {
           var link = icon[i].class.link;
-          console.log();
+
           break;
         }
       }
