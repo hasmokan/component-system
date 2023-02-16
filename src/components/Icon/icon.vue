@@ -1,7 +1,7 @@
 <template>
   <div :class="['emui-icon', 'emui-icon']" :style="{ width, height }">
     <svg :style="{ width, height }">
-      <image :xlink:href="className" :style="{ width, height }" />
+      <image :xlink:href="link" :style="{ width, height }" />
     </svg>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
     };
   },
   computed: {
-    className() {
+    link() {
       for (let i = 0; i < icon.length; i++) {
         if (icon[i].class.name == this.name) {
           var link = icon[i].class.link;
@@ -43,7 +43,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-@import "@/styles/icon.scss";
-</style>

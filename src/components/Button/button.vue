@@ -30,18 +30,22 @@ export default {
       type: String,
       default: "default",
       // type值校验
-      // validator: function (value) {
-      //   return (
-      //     [
-      //       "default",
-      //       "success",
-      //       "primary",
-      //       "danger",
-      //       "warning",
-      //       "info",
-      //     ].indexOf(value) !== -1
-      //   );
-      // },
+      validator: function (value) {
+        return (
+          [
+            "default",
+            "primarygold",
+            "successwhite",
+            "successgold",
+            "dangerwhite",
+            "dangergold",
+            "round",
+            "plain",
+            "disabled",
+            "circle",
+          ].indexOf(value) !== -1
+        );
+      },
     },
     // 朴素按钮
     plain: {
@@ -85,5 +89,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@import "src/styles/button.scss";
+</style>
 
 

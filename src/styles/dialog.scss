@@ -1,7 +1,7 @@
-//@import url(); 引入公共scss类
+// //@import url(); 引入公共scss类
 @import "./common/scss/color.scss";
-//引入江西拙楷字体
-@import "./common/scss/font.scss";
+// //引入江西拙楷字体
+// @import "./common/scss/font.scss";
 
 .emui-dialog--wrapper {
   position: fixed;
@@ -16,7 +16,7 @@
   .emui-dialog {
     position: relative;
     margin: 15vh auto 50px;
-    background: $background-flesh-color;
+    background: #f8e8db;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 

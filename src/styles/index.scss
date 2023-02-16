@@ -7,7 +7,18 @@
 @import "./select";
 @import "./table";
 @import "./tag";
+
+@import './nav.scss';
+@import './totalnav.scss';
+@import './subnav.scss';
+@import './navitem.scss';
+@import './dialog.scss';
+
+@import './icon.scss';
+
+@import './link.scss';
+
 @font-face {
-    font-family: jiangxizhuokai;
-    src: url("../assets/font/江西拙楷.ttf");
-  }
+  font-family: jiangxizhuokai;
+  src: url("../assets/font/江西拙楷.ttf");
+}
