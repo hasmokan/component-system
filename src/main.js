@@ -18,7 +18,7 @@ import emuiRadioGroup from "./components/Radio/RadioGroup"
 import emuiNav from "./components/Nav/nav"
 import emuiNavItem from "./components/Nav/nav-item"
 import emuiSubNav from "./components/Nav/sub-nav"
-
+import emuiSwitch from "./components/switch/index"
 
 // import "@/assets/iconfont/iconfont.css"
 // import "./components/Icon/icon.js"
@@ -33,7 +33,7 @@ Vue.component(emuiInput.name, emuiInput)
 Vue.component(emuiRadio.name, emuiRadio)
 Vue.component(emuiRadioButton.name, emuiRadioButton)
 Vue.component(emuiRadioGroup.name, emuiRadioGroup)
-
+Vue.component(emuiSwitch.name, emuiSwitch)
 
 Vue.prototype.$notice = Message;
 
