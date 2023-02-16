@@ -73,5 +73,5 @@ export default {
 };
 </script>
 <style lang="scss">
-@import "@/styles/dialog.scss";
+@import "src/styles/dialog.scss";
 </style>
