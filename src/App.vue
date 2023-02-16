@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <emui-tag type="success">标签</emui-tag>
+    <emui-input></emui-input>
+    <emui-radio></emui-radio>
    </div>
 </template>
 

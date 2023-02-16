@@ -1,2 +1,2 @@
-import emuiButton from "./button.vue"
-export default emuiButton
+import Button from "./button.vue"
+export default Button

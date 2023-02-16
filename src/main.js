@@ -11,7 +11,7 @@ Vue.component(emuiButton.name, emuiButton)
 // Vue.use(Message)
 
 import emuiDialog from "./components/dialog/dialog"
-import emuiInput from "./components/Input/input"
+import emuiInput from "./components/Input/input.vue"
 import emuiRadio from "./components/Radio/radio"
 import emuiRadioButton from "./components/Radio/RadioButton"
 import emuiRadioGroup from "./components/Radio/RadioGroup"

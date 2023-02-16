@@ -44,7 +44,7 @@ const components = {
 }
 
 
-const install = function (Vue, options = {}) {
+const install = function (Vue,options={}) {
 
   Object.keys(components).forEach(key => {
     Vue.component(key, components[key]);
