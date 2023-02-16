@@ -3,7 +3,7 @@
 
 
 .input{
-    width: 200px;
+    width: 160px;
     height: 40px;
     line-height: 40px;
     position: relative;
@@ -15,7 +15,9 @@
   border-radius: 4px;
   border: 2px solid $primary-color;
   font-size: 14px;
+  font-family: "jiangxizhuokai";
   padding: 7px 10px;
+  width: 100%;
 
   &:active,
   &:focus {
@@ -43,7 +45,7 @@
 .eyes{
 font-size: 23px;
   position: absolute;
-  // top: 2px;
-  right: 8px;
+  top: 2px;
+  right: 35px;
   color: $info-color;
 }

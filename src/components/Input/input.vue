@@ -96,7 +96,6 @@ export default {
       default: 24,
     },
     rows: {
-      type: Number,
       default: 2,
     },
   },

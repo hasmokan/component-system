@@ -3,7 +3,7 @@ title: table
 ---
 
 ## 使用
-### 基础使用
+### 基本使用
 ::: demo
 ```html
  <emui-table
@@ -112,7 +112,7 @@ export default {
 | loading       | Boolean       | 表格是否展示loading状态      | false |
 | selected      | Boolean       | 表格是否展示多选框           | false |
 | height        | Number/String | 表格的高度                   | ' '   |
-| selectedItems | Array         | 表格多选框选中项所存入的数组 | [ ]   |
+| selectedItems | Array         | 表格多选框选中项所存入的数组,必须加`.sync` | [ ]   |
 | expendFiled   | String        | 可展开行的具体描述           | ' '   |
 | numberVisible | Boolean       | 是否展示序号                 | false |
 | bordered      | Boolean       | 是否带边框                   | false |

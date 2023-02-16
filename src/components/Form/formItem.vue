@@ -122,6 +122,7 @@ export default {
   display: flex;
   align-items: center;
   margin: 20px;
+  font-family: "jiangxizhuokai";
   .form-item-label {
     margin-right: 30px;
   }
@@ -134,6 +135,7 @@ export default {
   .message {
     font-size: 12px;
     color: red;
+    margin-left: 5px;
   }
 }
 </style>

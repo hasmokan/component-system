@@ -1,152 +1,44 @@
-@import "./common/scss/color.scss";
-@import "./common/scss/font.scss";
-div{
-    position: relative;
-    display: inline-block;
-    font-family: "jiangxizhuokai";
+
+.emui-tag{
+    display: inline-flex;
     align-items: center;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 15px;
-    border-radius: 10%;
-
-}
-
-.default{
-   font-size: medium;
-   height: 30px;
-   line-height: 30px;
-}
-.small{
-    font-size: small;
-    height: 20px;
-    line-height: 20px;
-}
-.large{
-    font-size:large;
-    height: 40px;
-    line-height: 40px;
-}
-.success.dark{
-    background-color:$primary-color;
-    color: $font-gold-color;
-    .remove{
-        cursor: pointer;
-        padding: 5px;
-        position: absolute;
-        top: 8px;
-        border-radius: 50%;
-        right: 10px;
-        height: 15px;
-        // width: 15px;
-        line-height: 15px;
-        &:hover{
-            background-color:$primary-color;
-            color: $font-gold-color;
-        }
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    margin: 10px;
+    background-color: #ecf5ff;
+    border-radius: 5px;
+    border: 1px solid #d9ecff;
+    font-size: 12px;
+    font-family: "jiangxizhuokai";
+    color: #409eff;
+    &-success{
+        background-color: #f0f9eb;
+        color:#67c23a;
     }
-}
-.success.light{
-    background-color:$success-color;
-    color: $font-gold-color;
-    .remove{
-        cursor: pointer;
-        position: absolute;
-        padding: 5px;
-        top: 8px;
-        border-radius: 50%;
-        height: 15px;
-        // width: 15px;
-        line-height: 15px;
-        right: 10px;
-        &:hover{
-            background-color:$primary-color;
-            color: $font-gold-color;
-        }
+    &-info{
+        background-color: #f4f4f5;
+        color: #909399;
     }
-}
-.success.plain{
-    background-color:rgb(255, 255, 255);
-    .remove{
-        cursor: pointer;
-        border-radius: 50%;
-        position: absolute;
-        padding: 5px;
-        height: 15px;
-        // width: 15px;
-        top: 8px;
-        
-        line-height: 15px;
-        right: 10px;
-        &:hover{
-            background-color:$primary-color;
-            color: $font-gold-color;
-        }
+    &-warning{
+        background-color: #fdf6ec;
+        color: #e6b4c4;
     }
-}
-
-.success.hit{
-    border: 1px solid rgb(25, 96, 184);
-}
-.warning.dark{
-    background-color:$warning-color;
-    color: $font-black-color;
-    .remove{
-        cursor: pointer;
-        padding: 5px;
-        position: absolute;
-        top: 8px;
-        border-radius: 50%;
-        right: 10px;
-        height: 15px;
-        // width: 15px;
-        line-height: 15px;
-        &:hover{
-            background-color:$warning-color;
-            color: $font-gold-color;
-        }
+    &-danger{
+        background-color: #fef0f0;
+        color: #f56c6c;
     }
-}
-.warning.light{
-    background-color:$warning-active-color;
-    color: $font-black-color;
-    .remove{
-        cursor: pointer;
-        position: absolute;
-        padding: 5px;
-        top: 8px;
-        border-radius: 50%;
-        height: 15px;
-        // width: 15px;
-        line-height: 15px;
-        right: 10px;
-        &:hover{
-            background-color:$warning-active-color;
-            color: $font-gold-color;
+    .iconfont{
+           vertical-align: middle;
+           width: 20px;
+           height: 20px;
+           line-height: 20px;
+            font-size: 18px;
+            position: relative;
+            top: 1px;
+            right: -5px;
+            &:hover{
+                cursor: pointer;
+            }
         }
-    }
-}
-.warning.plain{
-    border: 1px solid $warning-active-color;
-    background-color:rgb(255, 255, 255);
-    .remove{
-        cursor: pointer;
-        border-radius: 50%;
-        position: absolute;
-        padding: 5px;
-        height: 15px;
-        // width: 15px;
-        top: 8px;
-        
-        line-height: 15px;
-        right: 10px;
-        &:hover{
-            background-color:$warning-active-color;
-            color: $font-gold-color;
-        }
-    }
-}
-
-.warning.hit{
-    border: 1px solid $warning-color;
 }

@@ -2,16 +2,18 @@
 home: true
 heroImage: /image/logo.png
 heroText: Emui
+actionText: 开始使用 →
+actionLink: /guide/introduction
 features:
-- title: 一致性 Consistency
-  details: 与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念
-- title: 反馈 Feedback
-  details: 通过界面样式和交互动效让用户可以清晰的感知自己的操作
-- title: 效率 Efficiency
-  details: 界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。
+- title: 基于Vue2.X
+  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
+- title: 轻量级UI
+  details: 该UI使用了非常轻量级的设计理念，视觉感官更强烈
+- title: 高可用性
+  details: 良好的API接口设计，统一的使用习惯
 footer: byE码当先
 ---
-
+<!-- 
 ### 设计原则
 
 <div style="display:flex;justify-content: space-between;padding-bottom:40px">
@@ -35,4 +37,4 @@ footer: byE码当先
     <p style="margin:5px">可控</p>
     <p style="margin:0px;font-size: 12px;color:#666">Controllability</p>
   </div>
-</div>
+</div> -->

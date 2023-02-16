@@ -55,6 +55,7 @@ export default {
   background-color: #fff;
   border: 2px solid $primary-color;
   border-radius: 5px;
+  font-family: "jiangxizhuokai";
   &-active {
     background-color: $primary-active-color;
     color: #fff;

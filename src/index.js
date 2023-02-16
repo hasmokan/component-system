@@ -5,8 +5,9 @@ import Input from "./components/Input"
 import checkbox from "./components/CheckBox"
 import form from "./components/Form"
 import radio from "./components/Radio"
-import select from "./components/select"
-import table from "./components/table"
+import select from "./components/Select"
+import table from "./components/Table"
+import tag from "./components/Tag"
 import "./assets/iconfont/iconfont.css"
 
 Vue.config.productionTip = false
@@ -22,7 +23,9 @@ const components = {
   'emui-radio-group':radio.item,
   'emui-select':select,
   'emui-option':select.item,
-  'emui-table':table
+  'emui-table':table,
+  'emui-tag':tag,
+  'emui-tag-list':tag.group
 }
 
 
