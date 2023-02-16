@@ -90,4 +90,8 @@ export default {
 };
 </script>
 
+<style lang="scss" scoped>
+@import "src/styles/button.scss";
+</style>
+
 
