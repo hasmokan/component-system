@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1676564958935" clover="3.2.0">
+  <project timestamp="1676564958935" name="All files">
+    <metrics statements="256" coveredstatements="7" conditionals="63370" coveredconditionals="2" methods="20967" coveredmethods="1" elements="84593" coveredelements="10" complexity="0" loc="256" ncloc="256" packages="25" files="75" classes="75"/>
+    <package name="01-component-system">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="babel.config.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\babel.config.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="jest.config.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\jest.config.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.build">
+      <metrics statements="24" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="gen-style.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\build\gen-style.js">
+        <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+      <file name="webpack.base.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\build\webpack.base.js">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+      <file name="webpack.prod.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\build\webpack.prod.js">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.docs..vuepress">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="config.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\config.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="enhanceApp.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\enhanceApp.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.docs..vuepress.dist">
+      <metrics statements="3" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="config.dev.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\config.dev.js">
+        <metrics statements="3" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="5" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.docs..vuepress.dist.assets.js">
+      <metrics statements="36" coveredstatements="0" conditionals="63334" coveredconditionals="0" methods="20934" coveredmethods="0"/>
+      <file name="2.c0c503e2.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\2.c0c503e2.js">
+        <metrics statements="1" coveredstatements="0" conditionals="650" coveredconditionals="0" methods="253" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="650"/>
+      </file>
+      <file name="2.c0ff08b9.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\2.c0ff08b9.js">
+        <metrics statements="1" coveredstatements="0" conditionals="454" coveredconditionals="0" methods="209" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="454"/>
+      </file>
+      <file name="3.79843402.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\3.79843402.js">
+        <metrics statements="1" coveredstatements="0" conditionals="20" coveredconditionals="0" methods="16" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="20"/>
+      </file>
+      <file name="3.fd53ea74.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\3.fd53ea74.js">
+        <metrics statements="1" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
+      </file>
+      <file name="4.1582439f.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\4.1582439f.js">
+        <metrics statements="1" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="5"/>
+      </file>
+      <file name="4.6d83fc51.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\4.6d83fc51.js">
+        <metrics statements="1" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
+      </file>
+      <file name="4.864528a5.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\4.864528a5.js">
+        <metrics statements="1" coveredstatements="0" conditionals="5" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="5"/>
+      </file>
+      <file name="5.23be4a7d.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\5.23be4a7d.js">
+        <metrics statements="1" coveredstatements="0" conditionals="15" coveredconditionals="0" methods="15" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="15"/>
+      </file>
+      <file name="5.57a5806b.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\5.57a5806b.js">
+        <metrics statements="1" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="7"/>
+      </file>
+      <file name="5.82fd060b.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\5.82fd060b.js">
+        <metrics statements="1" coveredstatements="0" conditionals="15" coveredconditionals="0" methods="15" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="15"/>
+      </file>
+      <file name="6.35d831f6.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\6.35d831f6.js">
+        <metrics statements="1" coveredstatements="0" conditionals="17" coveredconditionals="0" methods="15" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="17"/>
+      </file>
+      <file name="6.bd50b708.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\6.bd50b708.js">
+        <metrics statements="1" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="7.0ee4358b.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\7.0ee4358b.js">
+        <metrics statements="1" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
+      </file>
+      <file name="7.c5bc5ee8.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\7.c5bc5ee8.js">
+        <metrics statements="1" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="8.14399f3f.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\8.14399f3f.js">
+        <metrics statements="1" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
+      </file>
+      <file name="8.46e58d51.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\8.46e58d51.js">
+        <metrics statements="1" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="9.21247ef5.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\9.21247ef5.js">
+        <metrics statements="1" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
+      </file>
+      <file name="9.f0c22d56.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\9.f0c22d56.js">
+        <metrics statements="1" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
+      </file>
+      <file name="app.3d7f2622.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\app.3d7f2622.js">
+        <metrics statements="7" coveredstatements="0" conditionals="21322" coveredconditionals="0" methods="6917" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="61"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="3314"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="1560"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="9999"/>
+        <line num="24" count="0" type="cond" truecount="0" falsecount="3954"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="938"/>
+        <line num="43" count="0" type="cond" truecount="0" falsecount="1496"/>
+      </file>
+      <file name="app.66ce38c9.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\app.66ce38c9.js">
+        <metrics statements="4" coveredstatements="0" conditionals="19472" coveredconditionals="0" methods="6534" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="61"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="3428"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="13444"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="2539"/>
+      </file>
+      <file name="app.ab86d9c4.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\docs\.vuepress\dist\assets\js\app.ab86d9c4.js">
+        <metrics statements="7" coveredstatements="0" conditionals="21322" coveredconditionals="0" methods="6917" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="61"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="3314"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="1560"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="9999"/>
+        <line num="24" count="0" type="cond" truecount="0" falsecount="3954"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="938"/>
+        <line num="43" count="0" type="cond" truecount="0" falsecount="1496"/>
+      </file>
+    </package>
+    <package name="01-component-system.src">
+      <metrics statements="23" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="App.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\App.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\index.js">
+        <metrics statements="5" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+      </file>
+      <file name="main.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\main.js">
+        <metrics statements="16" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Button">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="button.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Button\button.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="90" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Button\index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.CheckBox">
+      <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="checkbox.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\CheckBox\checkbox.vue">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+      </file>
+      <file name="checkboxGroup.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\CheckBox\checkboxGroup.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\CheckBox\index.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Form">
+      <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="form.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Form\form.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+      </file>
+      <file name="formItem.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Form\formItem.vue">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Form\index.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Icon">
+      <metrics statements="14" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="icon.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Icon\icon.js">
+        <metrics statements="11" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+      <file name="icon.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Icon\icon.vue">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Icon\index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Icon.dist">
+      <metrics statements="6" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.dev.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Icon\dist\index.dev.js">
+        <metrics statements="6" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Input">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Input\index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="input.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Input\input.vue">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="126" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Link">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="link.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Link\link.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="link.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Link\link.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Message">
+      <metrics statements="40" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="10" coveredmethods="0"/>
+      <file name="MyMessage.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Message\MyMessage.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Message\index.js">
+        <metrics statements="38" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Nav">
+      <metrics statements="20" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="click-outside.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Nav\click-outside.js">
+        <metrics statements="11" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Nav\index.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+      <file name="nav-item.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Nav\nav-item.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+      <file name="nav.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Nav\nav.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+      </file>
+      <file name="sub-nav.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Nav\sub-nav.vue">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Radio">
+      <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="RadioButton.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Radio\RadioButton.vue">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+      </file>
+      <file name="RadioGroup.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Radio\RadioGroup.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Radio\index.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="radio.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Radio\radio.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Select">
+      <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Select\index.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="option.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Select\option.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+      </file>
+      <file name="select.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Select\select.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Table">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Table\index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="table.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Table\table.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="257" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.Tag">
+      <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Tag\index.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="tag.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Tag\tag.vue">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+      </file>
+      <file name="tagList.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\Tag\tagList.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.dialog">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="dialog.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\dialog\dialog.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\dialog\index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.progress">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="ProGress.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\progress\ProGress.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.components.switch">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Switch.vue" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\switch\Switch.vue">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\components\switch\index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.dist">
+      <metrics statements="26" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="index.dev.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\dist\index.dev.js">
+        <metrics statements="26" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.mixins">
+      <metrics statements="6" coveredstatements="0" conditionals="9" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="emitter.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\mixins\emitter.js">
+        <metrics statements="6" coveredstatements="0" conditionals="9" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+    </package>
+    <package name="01-component-system.src.utils">
+      <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="checkone.js" path="C:\Users\刘波\Desktop\组件库开发\01-component-system\src\utils\checkone.js">
+        <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
