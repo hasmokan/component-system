@@ -15,6 +15,6 @@ module.exports = {
     ],
     testMatch: ['**/tests/**/*.spec.js'],
     transformIgnorePatterns: ['<rootDir>/node_modules/'],
-    collectCoverage: true,
-    collectCoverageFrom: ["**/*.{js,vue}", "!**/node_modules/**"],
+    // collectCoverage: true,
+    // collectCoverageFrom: ["**/*.{js,vue}", "!**/node_modules/**"],
 }

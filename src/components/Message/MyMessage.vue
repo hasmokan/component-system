@@ -4,7 +4,6 @@
       :id="id"
       class="emui-message"
       v-if="visible"
-      :style="{ top: top + 'px' }"
       :class="[type, { center }]"
     >
       <i class="icon iconfont" :class="'icon-' + type"></i>
@@ -77,7 +76,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-@import "src/styles/message.scss";
-</style>

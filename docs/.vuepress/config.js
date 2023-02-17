@@ -52,7 +52,8 @@ module.exports = {
                         'basic/switch',
                         'basic/link',
                         'basic/icon',
-                        'basic/tag'
+                        'basic/tag',
+                        'basic/message'
                     ]
                 },
                 {

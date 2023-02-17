@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import MyMessage from "@/components/Message/MyMessage";
+import MyMessage from "./MyMessage.vue";
 let instances=[];
 let count=0;
 let MyMessageComponent=Vue.extend(MyMessage);

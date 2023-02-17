@@ -4,8 +4,6 @@
 import { shallowMount } from '@vue/test-utils'
 import Icon from "@/components/Icon";
 
-// import { shallowMount } from '@vue/test-utils'
-// import dialog from "@/components/dialog";
 describe('test ToDoList', () => {
     it('test name', () => {
         const wrapper = shallowMount(Icon, {

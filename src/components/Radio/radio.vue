@@ -70,7 +70,7 @@ export default {
     isDisabled() {
       return this.isGrouped
         ? this.radioGroup.disabled || this.disabled
-        : this.isDisabled;
+        : this.disabled;
     },
   },
   methods: {

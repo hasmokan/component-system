@@ -17,6 +17,7 @@ import icon from './components/icon'
 import link from './components/Link/link.js'
 import "./assets/iconfont/iconfont.css"
 import tag from './components/Tag'
+import message from "./components/Message"
 
 Vue.config.productionTip = false
 const components = {
@@ -49,6 +50,7 @@ const install = function (Vue,options={}) {
   Object.keys(components).forEach(key => {
     Vue.component(key, components[key]);
   });
+  Vue.prototype.$notice = message;
 
 }
 

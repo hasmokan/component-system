@@ -1,18 +1,15 @@
 //引入在线图标
 @import url('http://at.alicdn.com/t/c/font_3888617_r31bhbbh9wr.css');
-// //引入江西拙楷字体
-// @import "./common/scss/font.scss";
-
 
 .emui-message {
   width: 380px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-width: 1px;
-
-  border-style: solid;
-  border-color: #ebeef5;
+  border: 1px solid #ebeef5;
   position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 99999;
   line-height: 20px;
   transition: top 0.5s;
