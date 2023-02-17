@@ -17,8 +17,9 @@
 </template>
 
 <script>
+import '../Message/index.js'
 export default {
-  data() {
+  data () {
     return {
       visible: false,
       top: null,
@@ -52,25 +53,25 @@ export default {
     },
   },
   methods: {
-    destroyMeth() {
+    destroyMeth () {
       this.$destroy(this.$el);
       this.$el.parentNode.removeChild(this.$el);
     },
-    closeMeth() {
+    closeMeth () {
       if (typeof this.onClose == "function") {
         this.onClose(this.id);
       }
     },
     watch: {
       // eslint-disable-next-line no-unused-vars
-      visible(newVal, oldVal) {
+      visible (newVal, oldVal) {
         if (!newVal) {
           this.closeMeth();
         }
       },
     },
   },
-  mounted() {
+  mounted () {
     setTimeout(() => {
       this.visible = false;
     }, this.time);

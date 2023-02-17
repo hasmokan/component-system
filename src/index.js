@@ -16,6 +16,7 @@ import Button from "./components/Button"
 import icon from './components/icon'
 import link from './components/Link/link.js'
 import "./assets/iconfont/iconfont.css"
+import emuiMessage from "./components/Message/MyMessage";
 import tag from './components/Tag'
 
 Vue.config.productionTip = false
@@ -39,8 +40,8 @@ const components = {
   'emui-select': select,
   'emui-option': select.item,
   'emui-table': table,
-  'emui-tag':tag,
-  'emui-tag-list':tag.group
+  'emui-message':emuiMessage
+  
 }
 
 

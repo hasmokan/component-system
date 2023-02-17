@@ -79,6 +79,11 @@ module.exports = {
                     title: 'Table表格',
                     collapsable: false,
                     children: ['table/table']
+                },
+                {
+                    title: 'message',
+                    collapsable: false,
+                    children: ['message/message']
                 }
             ],
             '/guide/': [
