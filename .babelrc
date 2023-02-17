@@ -3,5 +3,10 @@
       [
         "@babel/preset-env"
       ]
-    ]
+    ],
+    "env": {
+      "test": {
+        "plugins": ["transform-require-context"]
+      }
+    }
   }
