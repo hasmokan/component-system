@@ -8,6 +8,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
+    "test:cov": "vue-cli-service test:unit --coverage",
     "lint": "vue-cli-service lint",
     "build-doc": "vuepress build docs",
     "dev": "vuepress dev docs"

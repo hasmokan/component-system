@@ -14,5 +14,7 @@ module.exports = {
       'jest-serializer-vue'
   ],
   testMatch: ['**/tests/**/*.spec.js'],
-  transformIgnorePatterns: ['<rootDir>/node_modules/']
+  transformIgnorePatterns: ['<rootDir>/node_modules/'],
+  collectCoverage: true,
+  collectCoverageFrom: ["**/*.{js,vue}", "!**/node_modules/**"],
 }
