@@ -10,21 +10,6 @@ module.exports = {
     markdown: {
         lineNumbers: true
     },
-    plugins: {
-        'demo-container': {
-            locales: [
-                {
-                    "lang": "zh-CN",
-                    "demo-block": {
-                        "hide-text": "隐藏代码",
-                        "show-text": "显示代码",
-                        "copy-text": "复制代码",
-                        "copy-success": "复制成功"
-                    }
-                },
-            ]
-        }
-    },
     themeConfig: {
         sidebarDepth: 1,
         nav: [

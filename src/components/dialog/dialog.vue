@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: "emui-Dialog",
+  name: "emui-dialog",
   data() {
     return {};
   },
@@ -73,5 +73,5 @@ export default {
 };
 </script>
 <style lang="scss">
-@import "src/styles/dialog.scss";
+@import "../../styles/dialog.scss";
 </style>

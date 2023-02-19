@@ -1,4 +1,8 @@
-import form from './form.vue'
+import form from'./form.vue'
 import formItem from './formItem.vue'
-form.item=formItem
-export default form
+export const Form=function(Vue){
+    Vue.component(form.name,form)
+}
+export const FormItem=function(Vue){
+    Vue.component(formItem.name,formItem)
+}

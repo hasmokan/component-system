@@ -87,4 +87,10 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+@import "../../styles/nav.scss";
+@import "../../styles/totalnav.scss";
+@import "../../styles/common/scss/color";
+</style>
+
 

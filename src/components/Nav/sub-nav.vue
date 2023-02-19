@@ -101,3 +101,10 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+@import "../../styles/subnav.scss";
+@import "../../styles/totalnav.scss";
+@import "../../styles/common/scss/color";
+
+</style>
+

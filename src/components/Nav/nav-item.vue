@@ -30,4 +30,9 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+@import "../../styles/navitem.scss";
+@import "../../styles/totalnav.scss";
+@import "../../styles/common/scss/color";
 
+</style>

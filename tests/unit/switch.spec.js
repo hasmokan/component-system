@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 import { shallowMount } from '@vue/test-utils'
-import Switch from "@/components/switch";
+import Switch from "@/components/Switch";
 
 // 测试是否激活
 describe('test ToDoList', () => {

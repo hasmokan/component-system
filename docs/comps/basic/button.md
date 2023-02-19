@@ -9,7 +9,6 @@ title: button
 ### 普通的按钮
 
 ::: demo
-
 ```html
 <emui-button type="default">取消</emui-button>
 <emui-button type="primarywhite">确认</emui-button>

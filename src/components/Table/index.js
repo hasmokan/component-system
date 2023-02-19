@@ -1,2 +1,5 @@
 import table from './table.vue'
-export default table
+
+export const Table=function(Vue){
+    Vue.component(table.name,table)
+ }

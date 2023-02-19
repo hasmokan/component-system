@@ -82,4 +82,7 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+@import "../../styles/radio.scss";
+</style>
 

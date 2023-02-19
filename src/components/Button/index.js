@@ -1,2 +1,4 @@
-import Button from "./button.vue"
-export default Button
+import button from "./button.vue"
+export const Button= function(Vue){
+    Vue.component(button.name,button)
+}

@@ -1,2 +1,4 @@
 import emuiInput from "./input.vue"
-export default emuiInput
+export const Input= function(Vue){
+    Vue.component(emuiInput.name,emuiInput)
+}

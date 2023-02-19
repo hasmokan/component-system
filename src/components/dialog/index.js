@@ -1,3 +1,5 @@
-import emuiDialog from './dialog'
+import emuiDialog from './dialog.vue'
 
-export default emuiDialog
+export const Dialog= function(Vue){
+    Vue.component(emuiDialog.name,emuiDialog)
+}

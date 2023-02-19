@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "emui-Button",
+  name: "emui-button",
   props: {
     type: {
       //数据类型字符串
@@ -91,7 +91,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/button.scss";
+@import "../../styles/button.scss";
 </style>
 
 

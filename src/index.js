@@ -1,57 +1,73 @@
-// import Vue from 'vue'
+
 import Vue from 'vue'
 
-import Input from "./components/Input"
-import checkbox from "./components/CheckBox"
-import form from "./components/Form"
-import radio from "./components/Radio"
-import select from "./components/select"
-import table from "./components/table";
-import Switch from "./components/switch"
-import nav from './components/Nav/nav'
-import navItem from './components/Nav/nav-item'
-import subNav from './components/Nav/sub-nav'
-import dialog from './components/dialog/dialog'
-import Button from "./components/Button"
-import icon from './components/icon'
-import link from './components/Link/link.js'
+import {Input} from "./components/Input"
+import {Checkbox,CheckboxGroup} from "./components/CheckBox"
+import {Form,FormItem} from "./components/Form"
+import {Radio,RadioButton,RadioGroup} from "./components/Radio"
+import {Select,Option} from "./components/Select"
+import {Table} from "./components/Table";
+// import {Switch} from "./components/Switch"
+import {Nav,NavItem,Subnav} from './components/Nav'
+import {Dialog} from './components/Dialog'
+import {Button} from "./components/Button"
+// import {Icon} from './components/Icon'
+// import "./components/Icon/icon.js"
+import {Link} from './components/Link'
+import {Tag,TagList} from './components/Tag'
+import Message from "./components/Message"
 import "./assets/iconfont/iconfont.css"
-import tag from './components/Tag'
-import message from "./components/Message"
 
+import "./styles/index.scss"
 Vue.config.productionTip = false
-const components = {
-  'emui-nav': nav,
-  'emui-nav-item': navItem,
-  'emui-sub-nav': subNav,
-  'emui-dialog': dialog,
-  'emui-button': Button,
-  'emui-switch': Switch,
-  'emui-icon': icon,
-  'emui-link': link,
-  'emui-input': Input,
-  'emui-checkbox': checkbox,
-  'emui-checkbox-group': checkbox.item,
-  'emui-form': form,
-  'emui-form-item': form.item,
-  'emui-radio': radio,
-  'emui-radio-button': radio.button,
-  'emui-radio-group': radio.item,
-  'emui-select': select,
-  'emui-option': select.item,
-  'emui-table': table,
-  'emui-tag':tag,
-  'emui-tag-list':tag.group
-}
 
-
-const install = function (Vue,options={}) {
-
-  Object.keys(components).forEach(key => {
-    Vue.component(key, components[key]);
-  });
-  Vue.prototype.$notice = message;
-
+const install=function(Vue,options={}){
+  Vue.use(Button)
+  Vue.use(Input)
+  Vue.use(Checkbox)
+  Vue.use(CheckboxGroup)
+  Vue.use(Form)
+  Vue.use(FormItem)
+  Vue.use(Radio)
+  Vue.use(RadioButton)
+  Vue.use(RadioGroup)
+  Vue.use(Select)
+  Vue.use(Option)
+  Vue.use(Table)
+  Vue.use(Nav)
+  // Vue.use(Switch)
+  Vue.use(NavItem)
+  Vue.use(Subnav)
+  Vue.use(Dialog)
+  // Vue.use(Icon)
+  Vue.use(Link)
+  Vue.use(Tag)
+  Vue.use(TagList)
+  Vue.prototype.$notice = Message;
 }
 
 export default install
+
+export {
+  Button,
+  Input,
+  Checkbox,
+  CheckboxGroup,
+  Form,
+  FormItem,
+  Radio,
+  RadioButton,
+  RadioGroup,
+  Select,
+  Option,
+  Table,
+  Nav,
+  NavItem,
+  Subnav,
+  Dialog,
+  // Icon,
+  Link,
+  Tag,
+  TagList,
+  Message
+}
