@@ -85,3 +85,5 @@ title: dialog
 | title    | String | dialog 标题                   |
 | visiable | String | dialog 是否开始就展示在页面上 |
 | v-slot   | slot   | 给对话框添加开关按钮          |
+| width    | String | dialog 宽度                   |
+| top      | String | dialog 与上页的距离           |
