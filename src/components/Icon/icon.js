@@ -1,4 +1,4 @@
-const req = require.context('../../assets/icon', false, /\.svg$/)
+const req = require.context('./assets/icon', false, /\.svg$/)
 let index = -1
 const requireAll = requireContext => requireContext.keys().map(requireContext => {
     index++

@@ -1,8 +1,8 @@
 {
-  "name": "emui",
-  "version": "0.1.0",
-  "private": true,
-  "description": "## Project setup ``` npm install ```",
+  "name": "ema-ui",
+  "version": "1.0.0",
+  "private": false,
+  "description": "基于vue2的UI组件库",
   "author": "",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,7 +10,8 @@
     "test:unit": "vue-cli-service test:unit",
     "test:cov": "vue-cli-service test:unit --coverage",
     "lint": "vue-cli-service lint",
-    "build-doc": "vuepress build docs",
+    "docs:build": "vuepress build docs",
+    "deploy-gh": "npm run docs:build && bash scripts/deploy-gh.sh",
     "dev": "vuepress dev docs"
   },
   "main": "dist/my-lib-cjs.js",

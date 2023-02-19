@@ -2,7 +2,7 @@ module.exports = {
     theme: '',
     title: 'Emui',
     description: '中国风ui组件库',
-    base: '/',
+    base: 'component-system',
     port: '8080',
     chainWebpack: config => {
         config.resolve.alias.set('core-js/library/fn', 'core-js/features')

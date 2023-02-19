@@ -5,15 +5,48 @@
 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
 
 ```
-npm i element-ui -S
+npm i ema-ui -S
 ```
+## 引入Ema-UI
+你可以引入整个 Ema-UI，或是根据需要仅引入部分组件。我们先介绍如何引入完整的 Ema-UI。
 
-## CDN
-目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
-
+### 完整引入
+在 main.js 中写入以下内容：
+```js
+import emui from 'ema-ui'
+import "ema-ui/dist/css/index.css"
+Vue.use(emui)
 ```
-<!-- 引入样式 -->
-<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-<!-- 引入组件库 -->
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+### 按需引入
+在 main.js 中写入以下内容：
+```js
+import {Input,Radio} from 'ema-ui'
+import "ema-ui/dist/css/index.css"
+Vue.use(Input)
+Vue.use(Radio)
+```
+### 完整组件列表和引入方式
+```js
+Vue.use(Input)
+Vue.use(Radio)
+Vue.use(RadioButton)
+Vue.use(RadioGroup)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Button)
+Vue.use(Select)
+Vue.use(Option)
+Vue.use(Table)
+Vue.use(Nav)
+Vue.use(NavItem)
+Vue.use(Subnav)
+Vue.use(Dialog)
+Vue.use(Icon)
+Vue.use(Link)
+Vue.use(Tag)
+Vue.use(TagList)
+Vue.use(Switcher)
+Vue.prototype.$notice = Message;
 ```
