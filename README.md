@@ -1,8 +1,8 @@
 # 项目说明
 
 # Emui 
-https://imgloc.com/i/gZxfp
-<img src="https://postimg.cc/56DcYjND">
+
+<img src="[https://postimg.cc/56DcYjND](https://imgloc.com/i/gZxfp)">
 中国风ui组件库
 文档地址：https://hasmokan.github.io/component-system/
 
