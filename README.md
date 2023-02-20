@@ -2,7 +2,8 @@
 
 # Emui 
 
-<img src="https://imgloc.com/i/gZxfp">
+
+![image](https://imgloc.com/i/gZxfp) 
 中国风ui组件库
 文档地址：https://hasmokan.github.io/component-system/
 
