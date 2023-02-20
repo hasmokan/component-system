@@ -2,7 +2,7 @@ module.exports = {
     theme: '',
     title: 'Emui',
     description: '中国风ui组件库',
-    base: 'component-system',
+    base: '/component-system/',
     port: '8080',
     chainWebpack: config => {
         config.resolve.alias.set('core-js/library/fn', 'core-js/features')
@@ -10,6 +10,7 @@ module.exports = {
     markdown: {
         lineNumbers: true
     },
+    plugins: ['demo-container'],
     themeConfig: {
         sidebarDepth: 1,
         nav: [
@@ -79,7 +80,4 @@ module.exports = {
             ]
         }
     },
-    head: [],
-    plugins: ['demo-container'],
-    markdown: {}
 }
