@@ -3,7 +3,7 @@
 # Emui 
 
 
-![image](https://imgloc.com/i/gZxfp) 
+<img src="https://i.328888.xyz/2023/02/20/gZxfp.png" alt="gZxfp.png" border="0" />
 中国风ui组件库
 文档地址：https://hasmokan.github.io/component-system/
 
